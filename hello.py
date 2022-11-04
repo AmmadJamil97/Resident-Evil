@@ -1,4 +1,4 @@
-print("hello world")
+h = "hello world"
 
-for x in 10:
-    print("Hi")
+for x in range(10):
+    print(h)
