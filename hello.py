@@ -4,3 +4,5 @@ h = "hello world"
 
 for x in range(10):
     print(h)
+
+print("My name is Bond, James Bond")
