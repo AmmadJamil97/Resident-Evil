@@ -26,3 +26,6 @@ for x in range(1):
 print("My name is Bond, James Bond")
 
 print("My name is Niki Minaaaj")
+
+print("so here is where i tried to edit on remote github, to see if it update on my local codespace")
+print("at the bottom i also pressed 'commit changes' green button")
