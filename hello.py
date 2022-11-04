@@ -29,3 +29,5 @@ print("My name is Niki Minaaaj")
 
 print("so here is where i tried to edit on remote github, to see if it update on my local codespace")
 print("at the bottom i also pressed 'commit changes' green button")
+
+print("that was indeed successfull, now editing this while chrome closed to log in and see online, of coz with a)git add . and b) git commit")
