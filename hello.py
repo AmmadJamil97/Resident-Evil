@@ -1,7 +1,6 @@
 h = "hello world"
 
-# loop thru 10# comment''
-# comment here
-# test source control
+# testing manual git add ., git commit, git push
+
 for x in range(10):
     print(h)
