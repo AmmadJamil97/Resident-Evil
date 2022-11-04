@@ -1,1 +1,1 @@
-orint("hello world")
+print("hello world")
