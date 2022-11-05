@@ -35,3 +35,5 @@ print("that was indeed successfull, now editing this while chrome closed to log 
 print("offline while closed chrome was not able to update online on git, even after thirs c) git push step, so we need to 'git push --set-upstream origin main' to make it work")
 
 print("after above step, simplay git push . did the job of updating onine, but did this saved correctly?")
+
+print("Now just have to PUSH manually using the GUI")
