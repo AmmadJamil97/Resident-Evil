@@ -10,5 +10,8 @@
         "header header header"
         "nav main main"
         "nav main main";
-    height: 100
+    height: 100vh;
+    width: 100%;
+    grid-template-rows: 80px 1fr;
+    
 }
