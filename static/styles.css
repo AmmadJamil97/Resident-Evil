@@ -17,7 +17,8 @@
 }
 
 nav{
-    background: red;
+    border: solid red;
+    border-radius: 100px;
     grid-area: nav;
 }
 
@@ -30,6 +31,7 @@ header{
 main{
     grid-area: main;
     border: solid green;
+    border-radius: 100px;
     margin:1%;
     padding:3%;
 }
