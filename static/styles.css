@@ -17,6 +17,7 @@
 }
 
 nav{
+    padding:0%;
     border: solid red;
     border-radius: 100px;
     grid-area: nav;
