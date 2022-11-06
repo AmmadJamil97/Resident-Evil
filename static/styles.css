@@ -24,7 +24,8 @@ nav{
 }
 
 header{
-    background: violet;
+    border: solid violet;
+    border-radius: 5px;
     grid-area: header;
     margin: 10px;
 }
