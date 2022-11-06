@@ -17,9 +17,9 @@
 }
 
 nav{
-    padding:0%;
+    text-align: center;
     border: solid red;
-    border-radius: 100px;
+    border-radius: 30px;
     grid-area: nav;
 }
 
