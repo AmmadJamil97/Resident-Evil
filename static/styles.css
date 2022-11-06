@@ -5,7 +5,7 @@
 
 #dashboard{
 grid-template-areas:
-    "a a a"
+    "header header header"
     "b c c"
     "b c c";
 }
