@@ -3,11 +3,11 @@
     text-align: center;
 }
 
-#dashboard{
-display: grid;
-grid-template-areas:
-    "header header header"
-    "nav main main"
-    "nav main main";
-
+#dashboard
+{
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main main"
+        "nav main main";
 }
