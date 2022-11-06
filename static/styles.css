@@ -15,3 +15,21 @@
     grid-template-rows: 80px 1fr;
     grid-template-columns: 250px 1fr;
 }
+
+nav{
+    background: red;
+    grid-area: nav;
+}
+
+header{
+    background: violet;
+    grid-area: header;
+    margin: 10px;
+}
+
+main{
+    grid-area: main;
+    border: solid green;
+    margin:1%;
+    padding:3%;
+}
