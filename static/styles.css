@@ -4,8 +4,10 @@
 }
 
 #dashboard{
+display: grid;
 grid-template-areas:
     "header header header"
-    "b c c"
-    "b c c";
+    "nav main main"
+    "nav main main";
+
 }
