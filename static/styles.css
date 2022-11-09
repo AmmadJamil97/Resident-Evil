@@ -2,7 +2,10 @@
 {
     text-align: right;
 }
-
+.items
+{
+    padding-right: 30px;
+}
 .container
 {
     list-style: none;
