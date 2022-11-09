@@ -21,6 +21,7 @@ nav{
     border: solid red;
     border-radius: 30px;
     grid-area: nav;
+    margin: 2%;
 }
 
 header{
