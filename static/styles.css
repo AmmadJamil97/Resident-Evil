@@ -5,10 +5,10 @@
 
 .container
 {
-    list-style=
+    list-style=none;
 }
 
-#logo
+.logo
 {
     align: right;
     width: 50px;
