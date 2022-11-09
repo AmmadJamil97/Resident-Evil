@@ -1,8 +1,3 @@
-.center
-{
-    text-align: center;
-}
-
 #login
 {
     text-align: right;
@@ -12,9 +7,9 @@
 {
     display: grid;
     grid-template-areas:
-        "header header header"
-        "nav main main"
-        "nav main main";
+        "nav main header"
+        "nav main header"
+        "nav main header";
     height: 100vh;
     width: 100%;
     grid-template-rows: 80px 1fr;
