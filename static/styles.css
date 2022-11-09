@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+#login
+{
+    text-align: left;
+}
+
 #dashboard
 {
     display: grid;
