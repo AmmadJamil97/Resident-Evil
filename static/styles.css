@@ -33,7 +33,6 @@ header{
     border-radius: 5px;
     grid-area: header;
     margin: 10px;
-    text-align: center;
 }
 
 main{
