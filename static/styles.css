@@ -3,6 +3,11 @@
     text-align: right;
 }
 
+#logo
+{
+    align: right;
+}
+
 #dashboard
 {
     display: grid;
