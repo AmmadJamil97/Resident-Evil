@@ -6,6 +6,7 @@
 .container
 {
     list-style: none;
+    display: flex;
 }
 
 .logo
