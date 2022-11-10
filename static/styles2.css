@@ -12,7 +12,7 @@
   list-style: none;
   display: flex;
   background-color: brown;
-  font-size:30px;
+  font-size:clamp(12px, 10vw, 35px);
   border-radius: 30px;
 }
 
