@@ -1,24 +1,48 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+     .logo {
+       width: 30px;
+       height: 30px;
+       margin-right: auto;
+       margin-top: 10px;
+       /*the margin top pushes the logo down by 10 pixels*/
+       border-radius: 50%;;
+     }
+                  .container {
+                      list-style: none;
+                      display: flex;
+                      background-color: brown;
+                      font-size: 40px;
 
-{% block title %}<title>Test 2 Page</title>{% endblock %}
+                  }
+                 .items {
+                   padding-right: 30px;
+                   padding-top: 5px;
+                 }
+                 .items a {
+                   color: azure;
+                   text-decoration: none;
 
-{% block main %}
+                 }
+                 .items a:hover {
+                   color: yellow;
+                 }
+    </style>
+</head>
+<body>
 
+        <ul class="container">
+          <img src="https://cdn.europosters.eu/image/1300/mugs/looney-tunes-logo-i108466.jpg" class="logo">
+          <li class="items"><a href="https://www.google.com"> Google </a></li>
+            <li class="items"><a href="https://www.facebook.com"> FB </a></li>
+              <li class="items"><a href="https://www.facebook.com"> Youtube </a> </li>
+        </ul>
 
-<ul class="container">
-  <img class="logo" src="/static/jwh.jpeg" alt="pic1">
-  <li class="items"><a href="https://www.google.com">Google</a></li>
-  <li class="items"><a href="https://www.facebook.com">Facebook</a></li>
-  <li class="items"><a href="https://www.twitter.com">Twitter</a></li>
-</ul>
-
-  <section id="dashboard">
-
-    <nav>Nav</nav>
-    <header>Header</header>
-    <main>Main</main>
-
-  </section>
-
-
-{% endblock %}
+</body>
+</html>
