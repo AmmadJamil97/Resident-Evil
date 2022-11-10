@@ -54,11 +54,12 @@
 nav
 {
   border: ridge blue;
-  height: 100vh;
+
+  grid-area: nav;
 }
 
 main
 {
   border: solid green;
-  height: 100vh;
+  grid-area: main;
 }
