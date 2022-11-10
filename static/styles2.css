@@ -41,4 +41,8 @@
     "nav main";
   height: 100vh; /*1vh = 1% of viewport height*/
   width: 100%;
+
+  grid-template-rows: ; /*row height for the 1st row (-), row height for the 1st column (|)*/
+
+  grid-template-columns: ; /**/
 }
