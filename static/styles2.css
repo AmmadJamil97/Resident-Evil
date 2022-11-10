@@ -40,5 +40,5 @@
     "nav main"
     "nav main";
   height: 100vh; /*100% of 1% from view port*/
-
+  width: 100%;
 }
