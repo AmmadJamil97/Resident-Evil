@@ -5,7 +5,6 @@
 .items
 {
     padding-right: 50px;
-    flex-grow: 1;
 }
 .container
 {
@@ -58,9 +57,4 @@ main{
     border-radius: 50px;
     margin:1%;
     padding:3%;
-}
-
-.logo{
-    max-width: 100%;
-    height: auto;
 }
