@@ -12,7 +12,7 @@
   display: flex;
   background-color: brown;
   font-size: 40px;
-
+  border-radius: 30px;
 }
 
 .items {
