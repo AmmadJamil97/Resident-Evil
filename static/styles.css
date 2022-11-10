@@ -5,6 +5,7 @@
 .items
 {
     padding-right: 50px;
+    flex-grow: 1;
 }
 .container
 {
@@ -14,7 +15,6 @@
     list-style: none;
     display: flex;
     border: solid;
-    flex-grow: 1;
 }
 
 .logo
