@@ -33,9 +33,11 @@
 #dashboard
 {
   display: grid;
-  grid-templates-area:
+  border: solid red;
+  grid-template-areas:
     "nav main"
     "nav main"
     "nav main";
-  height: 100; //dsada//
+  height: 100vh; /*100% of 1% from view port*/
+
 }
