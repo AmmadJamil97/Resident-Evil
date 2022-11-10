@@ -1,28 +1,27 @@
 .logo {
-    width: 30px;
-    height: 30px;
-    margin-right: auto;
-    margin-top: 10px;
-    /*the margin top pushes the logo down by 10 pixels*/
-    border-radius: 50%;;
-  }
-
-.container {
-    list-style: none;
-    display: flex;
-    background-color: brown;
-    font-size: 40px;
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+  margin-top: 10px;
+  /*the margin top pushes the logo down by 10 pixels*/
+  border-radius: 50%;;
 }
+             .container {
+                 list-style: none;
+                 display: flex;
+                 background-color: brown;
+                 font-size: 40px;
 
-.items {
-    padding-right: 30px;
-    padding-top: 5px;
-  }
-  .items a {
-    color: azure;
-    text-decoration: none;
+             }
+            .items {
+              padding-right: 30px;
+              padding-top: 5px;
+            }
+            .items a {
+              color: azure;
+              text-decoration: none;
 
-  }
-  .items a:hover {
-    color: yellow;
-  }
+            }
+            .items a:hover {
+              color: yellow;
+            }
