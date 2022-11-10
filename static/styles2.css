@@ -33,5 +33,8 @@
 #dashboard
 {
   display: grid;
-  
+  grid-templates-area:
+    "nav main"
+    "nav main"
+    "nav main"
 }
