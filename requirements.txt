@@ -1,0 +1,4 @@
+Flask
+requests
+cs50
+Flask-session
