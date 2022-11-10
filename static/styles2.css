@@ -54,12 +54,14 @@
 
 nav
 {
+  margin: 3%;
   border: ridge blue;
   grid-area: nav;
 }
 
 main
 {
+  margin: 1%;
   border: solid green;
   grid-area: main;
 }
