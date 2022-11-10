@@ -55,7 +55,7 @@
 nav
 {
   border: ridge blue;
-
+  
   grid-area: nav;
 }
 
