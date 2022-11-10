@@ -4,19 +4,23 @@
 }
 .items
 {
-    padding-right: 30px;
+    padding-left: 50px;
 }
 .container
 {
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
     list-style: none;
     display: flex;
+    border: solid;
 }
 
 .logo
 {
     margin-right: auto;
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
 }
 
 #dashboard
