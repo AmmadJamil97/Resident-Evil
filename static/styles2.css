@@ -1,3 +1,7 @@
+*
+{
+  color: white;
+}
 .logo {
   width: 50px;
   height: 50px;
@@ -35,7 +39,7 @@
 {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/static/back.jpg);
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/static/back.jpg);
   background-position: center;
   background-size: cover;
   postiton: relative;
