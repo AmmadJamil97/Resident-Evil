@@ -12,13 +12,13 @@
   list-style: none;
   display: flex;
   background-color: brown;
-  font-size:30px;
+  font-size:16px;
   border-radius: 30px;
 }
 
 .items {
   padding-right: 30px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 .items a {
