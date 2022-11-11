@@ -11,7 +11,6 @@
 .container {
   list-style: none;
   display: flex;
-  flex-wrap:wrap;
   background-color: brown;
   font-size:30px;
   border-radius: 30px;
@@ -35,7 +34,8 @@
 
 #dashboard
 {
-  display: grid;
+  display: flex;
+  flex-wrap:wrap;
   /*border: solid red;*/
   border-radius: 5px;
   grid-template-areas:
