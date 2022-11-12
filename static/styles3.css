@@ -37,3 +37,9 @@ nav img /* here we will fix the size(width etc) of the logo */
     padding: 8px 12px;
     position: relative;
 }
+.nav-links ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
