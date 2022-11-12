@@ -34,7 +34,7 @@ nav img /* here we will fix the size(width etc) of the logo */
 .nav-links ul li
 {
     list-style: none;
-    display: inline-block; /* to come horizontally in small screen*/
+    display: inline-block; /* to come horizontally*/
     padding: 8px 12px;
     position: relative;
 }
@@ -43,4 +43,11 @@ nav img /* here we will fix the size(width etc) of the logo */
     color: #fff;
     text-decoration: none;
     font-size: 13px;
+}
+.nav-links ul li a::after
+{
+    content:'';
+    height: 100%;
+    width: 100%;
+    background: #;
 }
