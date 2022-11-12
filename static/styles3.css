@@ -49,10 +49,10 @@ nav img /* here we will fix the size(width etc) of the logo */
     content:'';
     height: 2px; /* note that % will not display the null content in page*/
     width: 0%;
-    background: #FFA500;
+    background: red;
     display: block; /* this is key point to make line below words(not that :: before makes it above the links words)*/
     margin: auto;
-    transition: 1s;
+    transition: 0.3s;
 }
 .nav-links ul li a:hover::after
 {
