@@ -21,3 +21,19 @@ nav
     justify-content: space-between;
     align-items: center;
 }
+nav img /* here we will fix the size(width etc) of the logo */
+{
+    width: 150px;
+}
+.nav-links
+{
+    flex: 1; /* occupy all the space in the row */
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block; /* to come hosrizontally*/
+    padding: 8px 12px;
+    position: relative;
+}
