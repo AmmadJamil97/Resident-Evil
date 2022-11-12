@@ -48,6 +48,13 @@ nav img /* here we will fix the size(width etc) of the logo */
 {
     content:'';
     height: 100%;
+    width: 0%;
+    background: #FFA500;
+    display: block; /* this is key point to make line below words(not that :: before makes it above the links words)*/
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li a:hover::after
+{
     width: 100%;
-    background: #;
 }
