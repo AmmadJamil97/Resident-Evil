@@ -47,7 +47,7 @@ nav img /* here we will fix the size(width etc) of the logo */
 .nav-links ul li a::after
 {
     content:'';
-    height: 100%;
+    height: 2px; /* note that % will not display the null content in page*/
     width: 0%;
     background: #FFA500;
     display: block; /* this is key point to make line below words(not that :: before makes it above the links words)*/
