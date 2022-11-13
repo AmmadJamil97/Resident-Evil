@@ -93,3 +93,9 @@ nav img /* here we will fix the size(width etc) of the logo */
     position: relative;
     cursor: pointer;
 }
+
+.hero-btn:hover
+{
+    border: 1px solid;
+    color: 
+}
