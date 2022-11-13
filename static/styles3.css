@@ -113,8 +113,9 @@ nav img /* here we will fix the size(width etc) of the logo */
 
     .nav-links
     {
+        position: absolute;
     }
-    
+
     .nav-links ul li
     {
         display: block;
