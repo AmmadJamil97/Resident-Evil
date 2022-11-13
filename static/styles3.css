@@ -240,7 +240,7 @@ h3
 {
     flex-basis: 30%; /* sets the initial main size of a flex item (img) */
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* to add space when in small device */
     position: relative;
     overflow: hidden; /* this WILL make it no overflow, but image will be cut
                         So need to add img properties below*/
