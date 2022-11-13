@@ -249,6 +249,7 @@ h3
 .campus-col img
 {
     width: 100%;
+    display: block;
 }
 
 .layer{
@@ -284,6 +285,6 @@ h3
 {
     opacity: 1;
     /* position: center; this cant do the trick to make it in middle of picture ,
-    so USE BOTTOM: 49% + pos absolute(from bot:0; in layer h3*/
+    so USE BOTTOM: 50% + pos absolute(from bot:0; in layer h3*/
     bottom: 50%;
 }
