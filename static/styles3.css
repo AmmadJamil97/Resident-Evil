@@ -61,5 +61,9 @@ nav img /* here we will fix the size(width etc) of the logo */
 
 .text-box
 {
+    width: 90%;
     color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
