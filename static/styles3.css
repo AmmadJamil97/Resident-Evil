@@ -114,7 +114,7 @@ nav img /* here we will fix the size(width etc) of the logo */
     .nav-links
     {
         position: absolute;
-        background: red;
+        background: #f44336;
         height: 100vh;
         width: 200px;
         right: 0; /*this only works with absolute POSITION*/
