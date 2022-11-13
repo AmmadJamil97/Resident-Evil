@@ -252,11 +252,16 @@ h3
 }
 
 .layer{
-    background: rgba(226, 0, 0, 0.7);
+    background: rgba(226, 0, 0, 0);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0; /* these 3 lines changes from caption like BELOW img to layer like on TOP img*/
-    
+    transition: 0.8s;
+}
+
+.layer:hover
+{
+    background: rgba(226, 0, 0, 0.5); /* copy from layer class above and change above to transparent*/
 }
