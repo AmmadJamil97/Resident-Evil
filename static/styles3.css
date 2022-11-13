@@ -80,3 +80,16 @@ nav img /* here we will fix the size(width etc) of the logo */
     font-size: 18px;
     color: #fff;
 }
+
+.hero-btn
+{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
