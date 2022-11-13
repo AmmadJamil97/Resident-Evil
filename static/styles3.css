@@ -276,6 +276,7 @@ h3
     position: absolute;
     bottom: 100%;
     right: 50%; /* but need to use trans:trans(-50%) */
+    transform: translateX(50%);
 }
 
 .layer:hover h3
