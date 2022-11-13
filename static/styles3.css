@@ -205,8 +205,10 @@ h3
     margin: 10px 0;
 }
 
-@media
+@media(max-width: 700px)
 {
     .row
-{
+    {
+        flex-direction: column;
+    }
 }
