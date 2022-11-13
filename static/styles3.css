@@ -252,5 +252,7 @@ h3
 }
 
 .layer{
-    background: rgba
+    background: rgba(255, 0, 0, 0.7);
+    border-radius: 10px;
+    height: 
 }
