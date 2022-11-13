@@ -265,3 +265,8 @@ h3
 {
     background: rgba(226, 0, 0, 0.5); /* copy from layer class above and change above to transparent*/
 }
+
+.layer h3
+{
+    
+}
