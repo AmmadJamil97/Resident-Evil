@@ -169,7 +169,7 @@ nav .fa /* this simply means Font Awesome icon pack
 
 h1
 {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 600;
 }
 
@@ -204,7 +204,6 @@ h3
 {
     text-align: center;
     font-weight: 600;
-    font-size: 30px;
     margin: 10px 0;
 }
 
