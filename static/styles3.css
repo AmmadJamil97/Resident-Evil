@@ -101,3 +101,8 @@ nav img /* here we will fix the size(width etc) of the logo */
     background: #f44336;
     transition: 0.5s;
 }
+
+@media(max-width: 700px)
+{
+    
+}
