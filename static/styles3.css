@@ -92,10 +92,12 @@ nav img /* here we will fix the size(width etc) of the logo */
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .hero-btn:hover
 {
-    border: 1px solid;
-    color: 
+    border: 1px solid green;
+    background: #f44336;
+    transition: 0.5s;
 }
