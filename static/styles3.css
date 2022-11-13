@@ -167,13 +167,13 @@ nav .fa /* this simply means Font Awesome icon pack
 
 h1
 {
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 600;
 }
 
 p
 {
-    color: #777;
+    color: black;
     font-size: 24px;
     font-weight: 300;
     line-height: 25px;
@@ -195,4 +195,12 @@ p
     margin-bottom: 5%;
     padding: 20px 12px; /* FROM top/bot, left/right*/
     box-sizing: border-box;
+}
+
+h3
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0;
 }
