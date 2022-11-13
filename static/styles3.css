@@ -102,7 +102,10 @@ nav img /* here we will fix the size(width etc) of the logo */
     transition: 0.5s;
 }
 
-@media(max-width: 700px)
+@media(max-width: 700px) /* this is how to specify diff size of fonts for device with 700 px*/
 {
-    
+    .text-box h1
+    {
+        font-size: 20px;
+    }
 }
