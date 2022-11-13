@@ -154,3 +154,13 @@ nav .fa /* this simply means Font Awesome icon pack
         padding: 30px;
     }
 }
+
+/*---------course---------*/
+
+.course
+{
+    width: 80%;
+    margin: auto; /* to make the section of 80% in the middle */
+    text-align: center;
+    padding-top: 100px; /* some space from the top */
+}
