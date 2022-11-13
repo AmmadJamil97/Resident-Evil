@@ -122,6 +122,7 @@ nav img /* here we will fix the size(width etc) of the logo */
         text-align: left;
         z-index: 2;
         border-radius: 8px;
+        background: semi-transparent;
 
     }
 
