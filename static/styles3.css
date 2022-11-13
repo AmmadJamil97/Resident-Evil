@@ -252,7 +252,11 @@ h3
 }
 
 .layer{
-    background: rgba(255, 0, 0, 0.7);
-    border-radius: 10px;
-    height: 
+    background: rgba(226, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; /* these 3 lines changes from caption like BELOW img to layer like on TOP img*/
+    
 }
