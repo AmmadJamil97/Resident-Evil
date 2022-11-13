@@ -66,5 +66,15 @@ nav img /* here we will fix the size(width etc) of the logo */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); /* TOP LEFT TRANSFORM plays important role together to make it in center of div*/
+    text-align: center;
+
+}
+.text-box h1
+{
+    font-size: 62px;
+}
+.text-box p
+{
+    font-size: 62px;
 }
