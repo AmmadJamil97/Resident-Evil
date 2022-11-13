@@ -162,7 +162,7 @@ nav .fa /* this simply means Font Awesome icon pack
 .course
 {
     width: 80%;
-    margin: auto; /* to make the section of 80% in the middle */
+    margin: auto; /* to make the section of 80% to the right from top right */
     text-align: center;
     padding-top: 100px; /* some space from the top */
 }
@@ -230,4 +230,8 @@ h3
 .campus
 {
     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
 }
