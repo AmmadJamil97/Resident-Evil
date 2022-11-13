@@ -197,7 +197,7 @@ p
     margin-bottom: 5%;
     padding: 20px 12px; /* FROM top/bot, left/right*/
     box-sizing: border-box;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 h3
@@ -209,7 +209,7 @@ h3
 
 .course-col:hover
 {
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2); /*rgba = red grren blue alpha (alph is opacity) rgb max value is 255*/
+    box-shadow: 0 0 20px 10px rgba(220,0,0,0.2); /*rgba = red grren blue alpha (alph is opacity) rgb max value is 255*/
                                                 /*box shadow = (w,x,y-px,z-px) z-px: shadow length
                                                                                 y-px: shadow fade away length
                                                                                 x-px: left right
