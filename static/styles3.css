@@ -131,6 +131,7 @@ nav .fa /* this simply means Font Awesome icon pack
         z-index: 2;
         border-radius: 5px;
         opacity: 0.93;
+        transition: 0.8s;
 
     }
 

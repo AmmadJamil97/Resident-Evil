@@ -39,8 +39,20 @@
 
 </section>
 
+
+<!--------------------------------------JavaScript for Toggle Menu---------------------------------------------->
+<!--created new var in JS with same name(navLinks) as the id in HTML-->
+
 <script>
-    var navLinks = document.getElementById("navLinks"); <!--created new var in JS with same name as the id in HTML-->
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
 
 </script>
 
