@@ -113,6 +113,8 @@ nav .fa /* this simply means Font Awesome icon pack
 
 @media(max-width: 700px) /* this is how to specify diff size of fonts for device with <= 700 px*/
 {
+    html, body {overflow-x: hidden;} /* to prevent users able to scroll to the side nav link in small screen*/
+
     .text-box h1
     {
         font-size: 20px;
