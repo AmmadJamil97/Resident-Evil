@@ -110,4 +110,9 @@ nav img /* here we will fix the size(width etc) of the logo */
     {
         font-size: 20px;
     }
+
+    .nav-links ul li
+    {
+        display: block;
+    }
 }
