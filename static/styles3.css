@@ -238,7 +238,7 @@ h3
 
 .campus-col
 {
-    flex-basis: 30%;
+    flex-basis: 30%; /* sets the initial main size of a flex item (img) */
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
