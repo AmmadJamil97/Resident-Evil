@@ -275,7 +275,7 @@ h3
     transition: 0.8s;
     position: absolute;
     bottom: 100%;
-    left: 50%;
+    right: 50%; /* but need to use trans:trans(-50%) */
 }
 
 .layer:hover h3
