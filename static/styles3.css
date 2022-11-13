@@ -105,7 +105,10 @@ nav img /* here we will fix the size(width etc) of the logo */
 }
 
 
-nav .fa
+nav .fa /* this simply means Font Awesome icon pack inside nav*/
+{
+    display: none;
+}
 
 @media(max-width: 700px) /* this is how to specify diff size of fonts for device with <= 700 px*/
 {
