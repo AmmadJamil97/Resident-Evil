@@ -124,8 +124,8 @@ nav .fa /* this simply means Font Awesome icon pack
         background: #f44336;
         height: 100vh;
         width: 200px;
-        right: 0; /*this only works with absolute POSITION*/
-        top: 0;
+        right: -200px; /*previously was 0 px to make us see, now is -200 to makeit appear only after we click*/
+        top: 0; /*this only works with absolute POSITION*/
         text-align: left;
         z-index: 2;
         border-radius: 5px;
