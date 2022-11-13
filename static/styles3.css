@@ -114,6 +114,14 @@ nav img /* here we will fix the size(width etc) of the logo */
     .nav-links
     {
         position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        right: 0;
+        top: 0;
+        text-align: left;
+        z-index: 3;
+
     }
 
     .nav-links ul li
