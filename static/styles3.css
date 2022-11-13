@@ -207,6 +207,11 @@ h3
     margin: 10px 0;
 }
 
+.course-col:hover
+{
+    
+}
+
 @media(max-width: 700px)
 {
     .row
