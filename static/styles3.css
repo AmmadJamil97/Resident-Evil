@@ -105,7 +105,8 @@ nav img /* here we will fix the size(width etc) of the logo */
 }
 
 
-nav .fa /* this simply means Font Awesome icon pack inside nav*/
+nav .fa /* this simply means Font Awesome icon pack
+        inside nav will be none for both screens - need to make it visible in @media*/
 {
     display: none;
 }
@@ -135,5 +136,14 @@ nav .fa /* this simply means Font Awesome icon pack inside nav*/
     .nav-links ul li
     {
         display: block;
+    }
+
+    nav .fa
+    {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
 }
