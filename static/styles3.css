@@ -197,6 +197,7 @@ p
     margin-bottom: 5%;
     padding: 20px 12px; /* FROM top/bot, left/right*/
     box-sizing: border-box;
+    transition: 0.8s;
 }
 
 h3
@@ -209,7 +210,7 @@ h3
 
 .course-col:hover
 {
-    
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 @media(max-width: 700px)
