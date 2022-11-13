@@ -238,7 +238,15 @@ h3
 
 .campus-col
 {
-    flex-basis: 30%;
-    border-radius: 9px;
+    flex-basis: 32%;
+    border-radius: 10px;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden; /* this WILL make it no overflow, but image will be cut
+                        So need to add img properties below*/
+}
+
+.campus-col img
+{
+    width: 100%;
 }
