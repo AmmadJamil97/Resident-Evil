@@ -124,7 +124,8 @@ nav .fa /* this simply means Font Awesome icon pack
         background: #f44336;
         height: 100vh;
         width: 200px;
-        right: -200px; /*previously was 0 px to make us see, now is -200 to makeit appear only after we click*/
+        right: -200px; /*previously was 0 px to make us see, now is -200 to makeit appear only after we click
+                        need to add JS "click event in HTML in section-a-div-i(fa icon)*/
         top: 0; /*this only works with absolute POSITION*/
         text-align: left;
         z-index: 2;
