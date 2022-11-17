@@ -336,3 +336,8 @@ h3
     text-align: center; /* Text-align: center will center the contents of the container,  */
     margin: auto; /* while margin: auto will center the container itself.  */
 }
+
+.testimonials-col
+{
+    width: 100%;
+}
