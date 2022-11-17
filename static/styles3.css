@@ -301,8 +301,7 @@ h3
 
 .facilities-col
 {
-    margin-left: 30px;
-
+    flex-basis: 30%;
 }
 
 .facilities-col img
