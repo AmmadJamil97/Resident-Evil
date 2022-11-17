@@ -249,7 +249,7 @@ h3
 .campus-col img
 {
     width: 100%;
-    display: block;
+    display: block; /* to add rounded corner in bottom of image */
 }
 
 .layer{
