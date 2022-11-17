@@ -301,5 +301,11 @@ h3
 
 .facilities-col
 {
-    
+    margin-left: 30px;
+
+}
+
+.facilities-col img
+{
+    display: block;
 }
