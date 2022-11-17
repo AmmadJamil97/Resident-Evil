@@ -72,14 +72,14 @@ nav img /* here we will fix the size(width etc) of the logo */
 }
 .text-box h1
 {
-    font-size: 42px;
+    font-size: 60px;
     text-decoration: underline maroon;
     text-underline-position: under;
 }
 .text-box p
 {
     margin: 20px 0 40px; /* FROM top, left right, botom of the p tag */
-    font-size: 18px;
+    font-size: 25px;
     color: #fff;
 }
 
