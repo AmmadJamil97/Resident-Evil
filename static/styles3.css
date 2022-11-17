@@ -272,7 +272,7 @@ h3
     font-size: 26px;
     font-weight: 500;
     color: #fff;
-    opacity: 0; /* trick to make words not appear before hovering */
+    opacity: 0; /* trick to make words not appear before hovering , THIS IS INITIAL OPACITY*/
     transition: 0.8s;
     position: absolute;
     bottom: 100%;
@@ -283,7 +283,7 @@ h3
 
 .layer:hover h3
 {
-    opacity: 1;
+    opacity: 1; /* THIS IS AFTER OPACITY*/
     /* position: center; this cant do the trick to make it in middle of picture ,
     so USE BOTTOM: 50% + pos absolute(from bot:0; in layer h3*/
     bottom: 50%;
