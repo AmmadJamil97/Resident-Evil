@@ -315,4 +315,11 @@ h3
 .facilities-col h3
 {
     margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.facilities-col p
+{
+    padding: 0;
+    font-weight: 350;
 }
