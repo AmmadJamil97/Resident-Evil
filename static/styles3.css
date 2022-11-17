@@ -18,7 +18,7 @@
 nav
 {
     display: flex;
-    padding: 2% 6%; /*this will ad some internal space top % right %*/
+    padding: 2% 6%; /*this will ad some internal space topndown % rightnleft %*/
     justify-content: space-between;
     align-items: center;
 }
