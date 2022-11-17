@@ -292,13 +292,17 @@ h3
 
 /*-----------------facilities----------------------*/
 
+.facilities-back
+{
+    background: pink;
+}
+
 .facilities
 {
     width: 80%;
     text-align: center;
     margin: auto;
     padding-top: 100px;
-    background: pink;
 }
 
 .facilities-col
