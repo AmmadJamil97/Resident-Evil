@@ -302,9 +302,13 @@ h3
 .facilities-col
 {
     flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left
 }
 
 .facilities-col img
 {
-    display: block;
+    width: 100%;
+    border-radius: 10px;
 }
