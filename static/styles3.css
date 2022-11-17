@@ -288,3 +288,13 @@ h3
     so USE BOTTOM: 50% + pos absolute(from bot:0; in layer h3*/
     bottom: 50%;
 }
+
+/*-----------------facilities----------------------*/
+
+.facilities
+{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
