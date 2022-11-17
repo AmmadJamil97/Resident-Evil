@@ -312,7 +312,7 @@ h3
     border-radius: 10px;
 }
 
-.facilities-col
+.facilities-col h3
 {
-    
+    margin-top: 15px;
 }
