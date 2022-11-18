@@ -383,11 +383,11 @@ h3
     background-position: center; /*to bring forward? to make it visible in gradient color*/
     background-size: cover; /*to compress the image 100% visible of the ori size*/
     border-radius: 10px;
-    text-align: left;
-    padding: 
+    text-align: center;
+    padding: 100px 0px;
 }
 
-.cta-col img
+.cta h1
 {
-    width: 100%; /* 100% means full to that parent container*/
+    color: white; /* 100% means full to that parent container*/
 }
