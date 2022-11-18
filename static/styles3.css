@@ -361,5 +361,10 @@ h3
 
 .testimonials-col h3
 {
-    
+    text-align: left;
+}
+
+.testimonials-col .fa
+{
+    color: red;
 }
