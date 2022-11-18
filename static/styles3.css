@@ -330,11 +330,14 @@ h3
     padding: 0;
 }
 
+/*-------------------------------Testimonials----------------------*/
+
 .testimonials
 {
     width: 80%;
     text-align: center; /* Text-align: center will center the contents of the container,  */
     margin: auto; /* while margin: auto will center the container itself.  */
+    padding-top: 100px;
 }
 
 .testimonials-col
