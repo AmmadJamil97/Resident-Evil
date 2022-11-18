@@ -408,11 +408,11 @@ h3
     width: 80%;
     margin: auto;
     text-align: center;
-    margin: 100px;
 }
 
 .icons .fa
 {
     color: red;
     margin: 0 13px;
+    padding: 18px 0;
 }
