@@ -410,3 +410,9 @@ h3
     text-align: center;
     margin: 100px;
 }
+
+.icons .fa
+{
+    color: red;
+    margin: 0 13px;
+}
