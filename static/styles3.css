@@ -389,5 +389,7 @@ h3
 
 .cta h1
 {
-    color: white; /* 100% means full to that parent container*/
+    color: white;
+    margin: 40px;
+    padding: 0;
 }
