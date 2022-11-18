@@ -368,3 +368,13 @@ h3
 {
     color: red;
 }
+
+/*-------------------cta--------------------- */
+
+.cta
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
