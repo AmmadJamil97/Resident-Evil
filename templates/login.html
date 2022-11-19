@@ -1,5 +1,88 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Jaewon Hungary</title>
+    <link rel="stylesheet" href="/static/styles3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
 
-{% block title %}{% endblock %}
+        <a href="test4.html">
+            <img src="/static/jaewon.png">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <!--below to add anchor to make nav links clickable-->
+                <li><a href="test4.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="">REGISTER</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
 
-{% block main %}LOGIN Page{% endblock %}
+    <h1>About Us</h1>
+
+</section>
+
+<!-----------------------------Login--------------------------------->
+
+<section class="">
+
+
+
+
+
+
+</section>
+
+
+
+
+<!------------------------------Footer------------------------------------->
+
+<section class="footer">
+    <h2>About Us</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+    <div class="icons">
+
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Made with <i class="fa fa-heart-o"></i> By : Ammad Bin Jamil</p>
+    </div>
+</section>
+
+
+
+<!--------------------------------------JavaScript for Toggle Menu---------------------------------------------->
+<!--created new var in JS with same name(navLinks) as the id in HTML-->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+
+</script>
+
+</body>
+</html>
