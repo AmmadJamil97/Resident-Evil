@@ -461,6 +461,11 @@ h3
     width: 100%;
 }
 
+.aboutus-col p
+{
+    padding: 15px 0 25px; /* top 15px, left right 0px, bottom 25px */
+}
+
 
 
 /*--------------------Log In ------------------*/
