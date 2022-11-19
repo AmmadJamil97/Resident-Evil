@@ -416,6 +416,11 @@ h3
     font-wieght: 600;
 }
 
+.footer p
+{
+    margin: 25px 0;
+}
+
 .icons .fa
 {
     color: red;
