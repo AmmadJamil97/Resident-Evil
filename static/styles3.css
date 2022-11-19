@@ -439,3 +439,8 @@ h3
     background-size: cover; /*to stretch or to cut, TO COVER ENTIRE CONTAINER*/
     text-align: center;
 }
+
+.page2title
+{
+    color: white;
+}
