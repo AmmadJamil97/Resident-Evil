@@ -450,8 +450,11 @@ h3
     padding-bottom: 50px;
 }
 
-
-
+.aboutus-col
+{
+    flex-basis: 48%;
+    padding: ;
+}
 
 
 
