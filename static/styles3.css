@@ -410,6 +410,12 @@ h3
     text-align: center;
 }
 
+.footer h2
+{
+    margin: 25px 0;
+    font-wieght: 600;
+}
+
 .icons .fa
 {
     color: red;
