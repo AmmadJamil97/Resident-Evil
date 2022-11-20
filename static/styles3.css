@@ -472,6 +472,17 @@ h3
     padding: 15px 0 25px; /* top 15px, left right 0px, bottom 25px */
 }
 
+.red-btn
+{
+    border: 1px solid red;
+    background: transparent;
+    color: red; /*this will change the font color to RED */
+}
+
+.red-btn:hover
+{
+    color: white;
+}
 
 
 /*--------------------Log In ------------------*/
