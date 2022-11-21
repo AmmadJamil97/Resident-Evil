@@ -34,15 +34,15 @@
     <h1>Account Registration</h1>
 
 
-    <form class="register-form" method="post" action="/register" required>
+    <form class="register-form" method="post" action="/register">
         <div> <!--div - input will create username and password box on top-->
-            <input class="namenpass-box" type="text" name="username" id="username" placeholder="Choose a Username" autocomplete="off" autofocus>
+            <input required class="namenpass-box" type="text" name="username" id="username" placeholder="Choose a Username" autocomplete="off" autofocus>
         </div>
         <div>
-            <input class="namenpass-box" type="password" name="password" id="password" placeholder="Choose a password">
+            <input required class="namenpass-box" type="password" name="password" id="password" placeholder="Choose a password">
         </div>
         <div>
-            <input class="namenpass-box" type="password" name="confirmation" id="confirmation" placeholder="Retype your password">
+            <input required class="namenpass-box" type="password" name="confirmation" id="confirmation" placeholder="Retype your password">
         </div>
         <div>
             <button class="hero-btn submit-btn" type="submit" name="submit">Register Now</button>
