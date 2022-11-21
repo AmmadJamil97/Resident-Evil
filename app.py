@@ -1,4 +1,7 @@
 from flask import Flask, session, render_template, request, redirect
+
+from helpers import apology
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -18,6 +21,6 @@ def register():
 
         # Ensure password combination match
         if request.form.get("password") != request.form.get("confirmation"):
-            return apoloy()
+            return apology("your password and the confirmation dont match", 400)
 
 
