@@ -8,4 +8,8 @@ def route():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    """register user for the first time"""
+
+    session.clear()
+
+    # register user for the first time
+    
