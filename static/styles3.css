@@ -502,4 +502,12 @@ h3
 
 .login-form
 {
+    margin: 100px;
+}
+.username
+{
+    padding: 10px 0;
+    background: transparent;
+    border: 1px solid red;
+    border-radius: 3px
 }
