@@ -498,7 +498,8 @@ h3
     color: white;
 }
 
-.login
+.login-form
 {
     padding: 150px;
+    border: 1px red;
 }
