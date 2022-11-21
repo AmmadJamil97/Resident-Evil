@@ -17,6 +17,7 @@ def register():
         # Ensure all 3 field required ODNE in html from
 
         # Ensure password combination match
-        if request.form.get("password") != request.form.get("confirmation")
+        if request.form.get("password") != request.form.get("confirmation"):
+            return apoloy()
 
 
