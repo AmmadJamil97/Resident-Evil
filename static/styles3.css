@@ -432,6 +432,7 @@ h3
     background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(/static/background.jpg);
     background-position: center;
     background-size: cover; /*to stretch or to cut, TO COVER ENTIRE CONTAINER*/
+    position: relative;
     text-align: center;
     color: white;
 }
