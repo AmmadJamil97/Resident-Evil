@@ -6,4 +6,6 @@ def route():
     return render_template("test4.html")
 
 
-@app
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    """register user for the first time"""
