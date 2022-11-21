@@ -4,10 +4,13 @@ from flask import Flask, session, render_template, request, redirect
 app = Flask(__name__)
 
 @app.route("/")
+@app.route("/test4.html")
 def route():
     return render_template("test4.html")
 
-
+@app.route("/about.html")
+def about():
+    return render_template("about.html")
 
 
 
@@ -25,12 +28,11 @@ def register():
         if request.form.get("password") != request.form.get("confirmation"):
             return render_template("apology.html")
 
-@app.route("/about.html")
-def about():
-    return render_template('about.html')
+    else:
+        return render_template("register.html")
 
 
-@app.route("/register.html")
+@app.route("/login.html")
 def blog():
-    return render_template('/register.html')
+    return render_template("login.html")
 
