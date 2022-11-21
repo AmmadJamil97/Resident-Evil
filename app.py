@@ -16,6 +16,6 @@ def register():
 
         # Ensure user submit a username
         if not request.form.get("username"):
-            return render_template("must provide username")
+            return render_ template("must provide username")
 
 
