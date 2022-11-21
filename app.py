@@ -14,8 +14,6 @@ def register():
     # if method of requesting from the HTML page is POST
     if request.method == "POST":
 
-        # Ensure user submit a username
-        if not request.form.get("username"):
-            return render_ template("must provide username")
+        # Ensure all 3 field required ODNE in html
 
 
