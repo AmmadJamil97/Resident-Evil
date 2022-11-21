@@ -506,7 +506,7 @@ h3
 }
 .namenpass-box
 {
-    padding: 20px;
+    padding:10px 40px;
     background: transparent;
     border: 1px solid red;
     border-radius: 3px;
@@ -514,5 +514,5 @@ h3
 }
 .submit-btn
 {
-    margin-top: 10px;
+    margin-top: 20px;
 }
