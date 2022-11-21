@@ -1,5 +1,6 @@
 from flask import Flask, session, render_template, request, redirect
 from tkinter import *
+from tkinter import messagebox
 
 
 app = Flask(__name__)
@@ -19,6 +20,6 @@ def register():
 
         # Ensure user submit a username
         if not request.form.get("username"):
-            showerror("nousername", "Please insert username")
+            messagebox.showerror("nousername", "Please insert username")
 
 
