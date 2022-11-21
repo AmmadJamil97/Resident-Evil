@@ -25,4 +25,12 @@ def register():
         if request.form.get("password") != request.form.get("confirmation"):
             return render_template("apology.html")
 
+@app.route("/about.html")
+def about():
+    return render_template('about.html')
+
+
+@app.route("/register.html")
+def blog():
+    return render_template('/register.html')
 
