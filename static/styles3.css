@@ -500,20 +500,15 @@ h3
     color: white;
 }
 
-.login-header h1
-{
-
-    border-bottom: 1px red;
-}
-
 .login-form
 {
     margin: 100px;
 }
 .namenpass-box
 {
-    padding: 10px 0;
+    padding: 10px;
     background: transparent;
     border: 1px solid red;
-    border-radius: 3px
+    border-radius: 3px;
+    color: white;
 }
