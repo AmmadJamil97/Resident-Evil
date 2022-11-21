@@ -11,5 +11,11 @@ def register():
 
     session.clear()
 
-    # register user for the first time
-    
+    # if method of requesting from the HTML page is POST
+    if request.method == "POST":
+
+        # Ensure user submit a username
+        if not request.form.get("username"):
+            return render_template("must provide username")
+
+
