@@ -21,6 +21,6 @@ def register():
 
         # Ensure password combination match
         if request.form.get("password") != request.form.get("confirmation"):
-            return apology("your password and the confirmation dont match", 400)
+            return render_template("apology.html")
 
 
