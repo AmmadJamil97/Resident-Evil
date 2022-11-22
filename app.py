@@ -44,7 +44,7 @@ def login():
             return render_template("fail.html", value = "Invalid username and/or password")
 
         else:
-            return render_template("login.html")
+            return render_template("success.html")
 
     # for GET
     return render_template("login.html")
