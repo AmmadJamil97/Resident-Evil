@@ -37,12 +37,14 @@ def login():
     if request.method == "POST":
 
         # check user_id from database
-        rows = db.execute("SELECT * from users WHERE username = ?", request.form.get("username"))
+        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # check for WRONG username exist in 2nd row (1st row is title) + OR WRONG password for that username
-        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
-            return render_template("fail.html", value = "invalid username and/or password")
+        # if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
+            # return render_template("fail.html", value = "invalid username and/or password")
 
+        if len(rows) != 1:
+            return render_template("fail.html", value = "invalid username and/or password")
 
         else:
             return render_template("login.html")
