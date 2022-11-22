@@ -15,7 +15,7 @@ def about():
 
 
 
-@app.route("/register", methods=["post"])
+@app.route("/register", methods=["get","post"])
 def register():
 
     if request.method.get("username") != request.method.get("confirmation"):
