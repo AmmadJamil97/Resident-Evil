@@ -15,13 +15,13 @@ def about():
 
 
 
-@app.route("/register.html")
+@app.route("/register")
 def register():
     # Confirm Registration(this is else n plz care for indentation)
     return render_template("register.html")
 
 
 
-@app.route("/login.html")
+@app.route("/login")
 def blog():
     return render_template("login.html")
