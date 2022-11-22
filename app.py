@@ -43,7 +43,7 @@ def login():
         if len(rows) != 1:
             return render_template("fail.html", value = "Invalid username")
 
-        elif not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
+        if not check_password_hash(rows[0]["hash"], request.form.get("password")):
             return render_template("fail.html", value = "Invalid password")
 
         session["user_id"] = rows[0]["id"]
@@ -57,7 +57,7 @@ def login():
 @app.route("/register", methods=["GET","POST"])
 def register():
 
-    
+
 
     if request.method == "POST":
         if request.form.get("password") != request.form.get("confirmation"):
