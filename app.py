@@ -28,7 +28,7 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/login" method =["GET","POST"])
+@app.route("/login", methods =["GET","POST"])
 def login():
 
     # Forget any user_id either from Register or Log In earlier
@@ -36,18 +36,15 @@ def login():
 
     if request.method == "POST":
 
-        # check user_id from database
-        # rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+        # go in rows for user_id from database
+        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # check for WRONG username exist in 2nd row (1st row is title) + OR WRONG password for that username
-        # if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
-            # return render_template("fail.html", value = "invalid username and/or password")
+        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
+            return render_template("fail.html", value = "invalid username and/or password")
 
-        # if len(rows) != 1:
-        return render_template("login.html")
-
-        # else:
-            # return render_template("login.html")
+        else:
+            return render_template("login.html")
 
 
     return render_template("login.html")
