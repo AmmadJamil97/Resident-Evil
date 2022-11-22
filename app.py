@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request
+from cs50 import SQL
 
 
 app = Flask(__name__)
+
+# Configure CS50 Library to use SQLite database
+db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
 
@@ -24,7 +28,7 @@ def register():
 
         # this means, else: if non of the if is true:
         # return render_template("success.html")
-        rows = db.execute("SELECT * FROM users WHERE username = ?")
+        rows = db.execute("SELECT * FROM users WHERE username = ?", )
 
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
