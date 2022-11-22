@@ -37,6 +37,8 @@ def register():
         if len(rows) == 1:
             return render_template("fail.html", value = "Your username is already taken")
 
+        # create a python variable id to combine both username and hash password and also to add session easily later on
+        # this db below is to create a new row with new id and password
         id = db.execute("INSERT INTO users (username, hash) VALUES (?, ?);",
         request.form.get("username"), generate_password_hash(request.form.get("username")))
 
