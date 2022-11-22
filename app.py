@@ -40,11 +40,11 @@ def login():
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # check for WRONG username exist in 2nd row (1st row is title) + OR WRONG password for that username
-        if len(rows) != 1:
+        if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
             return render_template("fail.html", value = "Invalid username")
 
-        elif not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
-            return render_template("fail.html", value = "Invalid password")
+        # elif not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
+            # return render_template("fail.html", value = "Invalid password")
 
         session["user_id"] = rows[0]["id"]
 
