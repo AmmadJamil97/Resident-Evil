@@ -26,7 +26,7 @@ def register():
             return render_template("register.html")
 
     else:
-        return render_template("register.html")
+        return render_template("apology.html")
 
 
 
