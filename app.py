@@ -31,10 +31,13 @@ def about():
 @app.route("/login")
 def login():
 
+    # Forget any user_id either from Register or Log In earlier
+    session.clear()
+
     if request.method == "post":
 
         # check user_id from database
-        db.execute = ("SELECT * from users WHERE username = ?;", request.form.get("username"))
+        rows = db.execute("SELECT * from users WHERE username = ?;", request.form.get("username"))
 
         # remember session for that id
 
