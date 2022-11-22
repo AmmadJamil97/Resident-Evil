@@ -13,7 +13,7 @@ def about():
 
 
 
-@app.route("/lalaport", methods=["post"])
+@app.route("/register.html", methods=["post"])
 def register():
     # validate submission
     if not request.form.get("username"):
