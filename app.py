@@ -28,7 +28,7 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/login")
+@app.route("/login" method =["GET","POST"])
 def login():
 
     # Forget any user_id either from Register or Log In earlier
