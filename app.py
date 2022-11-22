@@ -57,6 +57,8 @@ def login():
 @app.route("/register", methods=["GET","POST"])
 def register():
 
+    session.clear()
+
     if request.method == "POST":
         if request.form.get("password") != request.form.get("confirmation"):
             return render_template("apology.html")
