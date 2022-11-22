@@ -35,7 +35,7 @@ def register():
 
         # this means if the len of rows is 0, then new username is true, not exist yet in database(len row 1 means wherever in the db, the username occupies 1 rows in db)
         if len(rows) == 1:
-            return render_template("fail.html", value = "your username is already taken")
+            return render_template("fail.html", value = "Your username is already taken")
 
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
