@@ -20,7 +20,10 @@ def register():
 
     if request.method == "POST":
         if request.method.get("username") != request.method.get("confirmation"):
-            return render_template("apology.html")
+            return render_template("register.html")
+
+        else:
+            return render_template("register.html")
 
     else:
         return render_template("register.html")
