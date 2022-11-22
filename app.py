@@ -47,8 +47,8 @@ def register():
 
         flash("Registered!")
 
-        return redirect("/test4")
-        
+        return render_template("/test4")
+
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
 
