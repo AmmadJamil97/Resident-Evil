@@ -28,7 +28,14 @@ def register():
 
         # this means, else: if non of the if is true:
         # return render_template("success.html")
-        rows = db.execute("SELECT * FROM users WHERE username = ?", )
+
+        # query database first into sql table
+        # create a py var that execute *(all) the columns inside the username
+        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+
+        # this means if the len of rows is 0, then new username is true, not exist yet in database(len row 1 means wherever in the db, the username occupies 1 rows in db)
+        if len(rows) == 1:
+            return render_template("apology.html")
 
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
