@@ -20,7 +20,7 @@ def register():
     # if method of requesting from the HTML page is POST
     if request.method == "POST":
 
-        # Ensure all 3 field required ODNE in html from
+        # Ensure all 3 field required DONE in html from(required)
 
         # Ensure password combination match
         if request.form.get("password") != request.form.get("confirmation"):
