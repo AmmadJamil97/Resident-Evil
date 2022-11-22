@@ -34,7 +34,7 @@ def login():
     if request.method == "post":
 
         # check user_id from database
-        db.execute = (";"
+        db.execute = ("SELECT * from users WHERE username = ?;", request.form.get("username"))
 
         # remember session for that id
 
