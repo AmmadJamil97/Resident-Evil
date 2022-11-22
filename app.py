@@ -13,15 +13,15 @@ def about():
 
 
 
-@app.route("/lalaport", methods=["get", "post"])
+@app.route("/lalaport", methods=["post"])
 def register():
     # validate submission
-    if not request.form.get("name") or request.form.get("sport") not in SPORTS:
-        return render_template("failure.html")
+    if not request.form.get("username"):
+        return render_template("apology.html")
 
 
     # Confirm Registration(this is else n plz care for indentation)
-    return render_template("success.html")
+    return render_template("test4.html")
 
 
 
