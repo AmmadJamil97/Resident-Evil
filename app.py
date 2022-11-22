@@ -33,5 +33,3 @@ def register():
 @app.route("/login.html")
 def blog():
     return render_template("login.html")
-
-app.run()
