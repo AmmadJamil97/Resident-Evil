@@ -17,7 +17,9 @@ def about():
 
 @app.route("/register")
 def register():
-    # Confirm Registration(this is else n plz care for indentation)
+
+    if request.method.get("username") != request.method.get("confirmation"):
+        
     return render_template("register.html")
 
 
