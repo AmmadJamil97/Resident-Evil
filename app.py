@@ -34,7 +34,7 @@ def login():
     # Forget any user_id either from Register or Log In earlier
     session.clear()
 
-    if request.method == "post":
+    if request.method == "POST":
 
         # check user_id from database
         rows = db.execute("SELECT * from users WHERE username = ?;", request.form.get("username"))
