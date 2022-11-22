@@ -22,8 +22,7 @@ def register():
         if request.form.get("password") != request.form.get("confirmation"):
             return render_template("apology.html")
 
-        else:
-            return render_template("success.html")
+        return render_template("success.html")
 
     else:
         return render_template("register.html")
