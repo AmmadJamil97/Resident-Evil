@@ -13,20 +13,9 @@ def about():
 
 
 
-@app.route("/register", methods=["GET", "POST"])
+@app.route("/lalaport", methods=["get", "post"])
 def register():
 
-    # if method of requesting from the HTML page is POST
-    if request.method == "POST":
-
-        # Ensure all 3 field required DONE in html from(required)
-
-        # Ensure password combination match
-        if request.form.get("password") != request.form.get("confirmation"):
-            return render_template("apology.html")
-
-    else:
-        return render_template("register.html")
 
 
 @app.route("/login.html")
