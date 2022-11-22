@@ -24,6 +24,7 @@ def register():
 
         return render_template("success.html")
 
+    # this below means, else: if request.method == "POST":
     else:
         return render_template("register.html")
 
