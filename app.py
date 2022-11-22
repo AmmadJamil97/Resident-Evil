@@ -15,11 +15,12 @@ def about():
 
 
 
-@app.route("/register")
+@app.route("/register", methods=["post"])
 def register():
 
     if request.method.get("username") != request.method.get("confirmation"):
-        
+        return render_template("apology.html")
+
     return render_template("register.html")
 
 
