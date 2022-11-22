@@ -30,3 +30,8 @@ def register():
 @app.route("/login")
 def blog():
     return render_template("login.html")
+
+
+@app.route("/apology")
+def apology():
+    return render_template("apology.html")
