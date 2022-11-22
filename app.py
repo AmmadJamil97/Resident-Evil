@@ -45,7 +45,7 @@ def login():
 
 
         else:
-            render_template("login.html")
+            return render_template("login.html")
 
 
     return render_template("login.html")
