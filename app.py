@@ -44,7 +44,7 @@ def login():
             # return render_template("fail.html", value = "invalid username and/or password")
 
         # if len(rows) != 1:
-            return render_template("fail.html", value = "invalid username and/or password")
+            return render_template("login.html")
 
         # else:
             # return render_template("login.html")
