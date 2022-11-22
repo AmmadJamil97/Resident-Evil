@@ -34,15 +34,15 @@
     <h1>Log In Page</h1>
 
 
-    <form action="post" class="login-form">
+    <form method="post" action="/login" class="login-form">
         <div> <!--div - input will create username and password box on top-->
-            <input class="namenpass-box" type="text" placeholder="Username" name="username" id="username">
+            <input required class="namenpass-box" type="text" placeholder="Username" name="username" id="username">
         </div>
         <div>
-            <input class="namenpass-box" type="password" placeholder="password">
+            <input required class="namenpass-box" type="password" placeholder="Password">
         </div>
         <div>
-            <button class="hero-btn submit-btn" type="submit" name="submit">Submit</button>
+            <button class="hero-btn submit-btn" type="submit" name="submit">Log In</button>
         </div>
     </form>
 

@@ -28,6 +28,19 @@ def about():
     return render_template("about.html")
 
 
+@app.route("/login")
+def login():
+
+    if request.method == "post":
+
+        # check user_id from database
+        db.execute = (";"
+
+        # remember session for that id
+
+
+    return render_template("login.html")
+
 
 @app.route("/register", methods=["GET","POST"])
 def register():
@@ -61,13 +74,6 @@ def register():
 
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
-
-
-
-
-@app.route("/login")
-def blog():
-    return render_template("login.html")
 
 
 @app.route("/apology")
