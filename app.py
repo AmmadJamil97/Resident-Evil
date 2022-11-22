@@ -32,7 +32,7 @@ def about():
 def login():
 
     # Forget any user_id either from Register or Log In earlier
-    session.clear()
+    # session.clear()
 
     if request.method == "POST":
 
