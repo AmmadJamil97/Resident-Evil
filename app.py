@@ -22,11 +22,9 @@ def register():
         if request.form.get("password") != request.form.get("confirmation"):
             return render_template("apology.html")
 
-        rows = db.execute("")
-
-
         # this means, else: if non of the if is true:
         # return render_template("success.html")
+        rows = db.execute("SELECT * FROM users WHERE username = ?")
 
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
