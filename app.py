@@ -42,6 +42,8 @@ def register():
         id = db.execute("INSERT INTO users (username, hash) VALUES (?, ?);",
         request.form.get("username"), generate_password_hash(request.form.get("username")))
 
+        
+
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
 
