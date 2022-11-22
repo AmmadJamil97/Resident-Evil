@@ -14,10 +14,10 @@ def about():
 
 
 
-@app.route("/register.html", methods=["post"])
+@app.route("/register.html")
 def register():
     # Confirm Registration(this is else n plz care for indentation)
-    return render_template("apology.html")
+    return render_template("register.html")
 
 
 
