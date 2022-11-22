@@ -3,6 +3,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+@app.route("/")
 @app.route("/test4.html")
 def index():
     return render_template("test4.html")
@@ -15,13 +16,8 @@ def about():
 
 @app.route("/register.html", methods=["post"])
 def register():
-    # validate submission
-    if not request.form.get("username"):
-        return render_template("apology.html")
-
-
     # Confirm Registration(this is else n plz care for indentation)
-    return render_template("test4.html")
+    return render_template("apology.html")
 
 
 
