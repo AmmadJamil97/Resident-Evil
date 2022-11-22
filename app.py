@@ -40,14 +40,14 @@ def register():
         # create a python variable id to combine both username and hash password and also to add session easily later on
         # this db below is to create a new row with new id and password
         id = db.execute("INSERT INTO users (username, hash) VALUES (?, ?);",
-        request.form.get("username"), generate_password_hash(request.form.get("username")))
+        request.form.get("username"), generate_password_hash(request.form.get("password")))
 
         # to create an action cookie aka session for the current user
         session["user_id"] = id
 
         flash("Registered!")
 
-        return render_template("/test4")
+        return render_template("success.html")
 
     # this below means, else: if request.method == "GET":
     return render_template("register.html")
