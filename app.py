@@ -22,11 +22,14 @@ def register():
         if request.form.get("password") != request.form.get("confirmation"):
             return render_template("apology.html")
 
-        return render_template("success.html")
+        rows = db.execute("")
 
-    # this below means, else: if request.method == "POST":
-    else:
-        return render_template("register.html")
+
+        # this means, else: if non of the if is true:
+        # return render_template("success.html")
+
+    # this below means, else: if request.method == "GET":
+    return render_template("register.html")
 
 
 
