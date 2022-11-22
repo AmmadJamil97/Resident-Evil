@@ -16,7 +16,7 @@ def about():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    
+
     # if method of requesting from the HTML page is POST
     if request.method == "POST":
 
@@ -34,3 +34,4 @@ def register():
 def blog():
     return render_template("login.html")
 
+app.run()
