@@ -46,6 +46,8 @@ def login():
         elif not check_password_hash(rows[0]["hash"], request.form.get("passowrd")):
             return render_template("fail.html", value = "Invalid password")
 
+        session["user_id"] = rows[0]["id"]
+
         return render_template("success.html")
 
     # for GET
