@@ -19,14 +19,14 @@ def about():
 def register():
 
     if request.method == "POST":
-        if request.method.get("password") != request.method.get("confirmation"):
+        if request.form.get("password") != request.form.get("confirmation"):
             return render_template("register.html")
 
         else:
             return render_template("register.html")
 
     else:
-        return render_template("apology.html")
+        return render_template("register.html")
 
 
 
