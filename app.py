@@ -46,7 +46,7 @@ def login():
         else:
             return render_template("login.html")
 
-
+    # for GET
     return render_template("login.html")
 
 
