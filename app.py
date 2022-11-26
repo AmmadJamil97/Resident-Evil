@@ -18,8 +18,8 @@ Session(app)
 db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
-
-return render_template("chatroom.html")
+def chatroom():
+    return render_template("chatroom.html")
 
 @app.route("/test4")
 def index():
