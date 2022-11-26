@@ -18,7 +18,6 @@ Session(app)
 db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
-def index
 
 @app.route("/test4")
 def index():
