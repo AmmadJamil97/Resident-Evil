@@ -52,7 +52,7 @@ def login():
 
     # for GET
     return render_template("login.html")
-
+                    
 
 @app.route("/register", methods=["GET","POST"])
 def register():
