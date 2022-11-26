@@ -18,6 +18,7 @@ Session(app)
 db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
+def index
 
 @app.route("/test4")
 def index():
@@ -52,7 +53,7 @@ def login():
 
     # for GET
     return render_template("login.html")
-                    
+
 
 @app.route("/register", methods=["GET","POST"])
 def register():
