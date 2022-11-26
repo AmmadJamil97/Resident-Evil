@@ -546,3 +546,16 @@ th, td
 {
 
 }
+
+.message-box
+{
+    width: 30%;
+    padding:10px 40px;
+    opacity: 0.5;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: black;
+}
