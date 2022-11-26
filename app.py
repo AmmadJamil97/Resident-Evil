@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session, flash
+from flask import Flask, render_template, request, session, flash, redirect
 from cs50 import SQL
 from flask_session import Session
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -50,7 +50,7 @@ def login():
 
         session["user_id"] = rows[0]["id"]
 
-        return render_template("success.html")
+        return redirect("/")
 
     # for GET
     return render_template("login.html")
