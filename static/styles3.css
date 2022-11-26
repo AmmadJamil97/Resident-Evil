@@ -529,7 +529,9 @@ h3
 /* -------------chatroom ---------------*/
 
 /* -------------tanle ---------------*/
-.table
+.table, th, td
 {
     border: 1px solid;
+    width: 80%;
+    margin: auto;
 }
