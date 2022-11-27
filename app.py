@@ -32,9 +32,15 @@ def chatroom():
 @app.route("/message")
 def message():
 
-    rows = db.execute("SELECT * from users WHERE id = ?", session["user_id"])
+    if request.method == "POST":
 
-    return render_template("chatroom.html")
+        db.execute("SELECT * from users WHERE id = ?", session["user_id"])
+
+        db.execute("INSERT INTO users WHERE message = ?", request.method.get())
+
+
+    else:
+        return render_template("chatroom.html")
 
 @app.route("/test4")
 def index():
