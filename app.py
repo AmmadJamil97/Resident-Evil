@@ -30,7 +30,7 @@ def message():
         db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
 
         # Insert into the id's respective message box to INSERT the message
-        db.execute("INSERT INTO users (messages) VALUES ('?');", request.form.get("message"))
+        db.execute("INSERT INTO users (messages) VALUES ('?') WHERE username = ?;", request.form.get("message"), session["user_id"])
 
         # connect loop in HTML and PY
         # rows = db.execute("SELECT * from")
