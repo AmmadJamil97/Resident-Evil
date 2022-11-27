@@ -39,7 +39,7 @@ def message():
         for row in rows:
             db.execute("INSERT INTO users (message) VALUES(?);", request.form.get("message"))
 
-        return render_template("chatroom.html")
+        return render_template("chatroom.html", rows = rows)
     else:
         return render_template("test4.html")
 
