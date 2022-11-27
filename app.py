@@ -24,7 +24,7 @@ def default():
 @app.route("/message", methods =["POST", "GET"])
 def message():
 
-    if method.form.get == "POST":
+    if request.form.get == "POST":
 
         # Go into current user's session id
         db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
