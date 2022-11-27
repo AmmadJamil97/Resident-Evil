@@ -24,7 +24,8 @@ def chatroom():
     rows = db.execute("SELECT username, messages FROM users WHERE username =?", session["user_id"])
 
     for row in rows:
-        
+        row["username"]
+        row["messages"]
 
     return render_template("chatroom.html")
 
