@@ -30,10 +30,15 @@ def message():
         db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
 
         # Insert into the id's respective message box to INSERT the message
-        db.execute("INSERT INTO users (messages) VALUES ('?') WHERE id = ?;", request.form.get("message"), session["user_id"])
+        rows = db.execute("INSERT INTO users (messages) VALUES ('?') WHERE id = ?;", request.form.get("message"), session["user_id"])
 
         # connect loop in HTML and PY
+        for row in rows:
+            row["username"] = db.execute("SELECT username FROM users WHERE username =?;", session["user_id"])
+            row["message"] = db.execute("SELECT message FROM users WHERE username =?;", session["user_id"])
         # rows = db.execute("SELECT * from")
+
+        return redirect("chatroom.html", rows=rows)
 
 
     return render_template("chatroom.html")
