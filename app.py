@@ -20,7 +20,7 @@ db = SQL("sqlite:///finalproject.db")
 @app.route("/")
 def default():
     return render_template("test4.html")
-    
+
 def chatroom():
     #return render_template("login.html")
 
@@ -41,6 +41,11 @@ def message():
 
         for row in rows:
             db.execute("INSERT INTO users (message) VALUES(?);", request.form.get("message"))
+
+        for row in rows:
+            row["username"]
+            row["messages"]
+
 
         return render_template("chatroom.html", rows = rows)
     else:
