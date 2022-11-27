@@ -34,9 +34,10 @@ def message():
 
     if request.method == "POST":
 
-        db.execute("SELECT * from users WHERE id = ?", session["user_id"])
+        rows = db.execute("SELECT * from users WHERE id = ?", session["user_id"])
 
-        db.execute("INSERT INTO users (message) VALUES(?);", request.form.get("message"))
+        for row in rows:
+            db.execute("INSERT INTO users (message) VALUES(?);", request.form.get("message"))
 
         return render_template("chatroom.html")
     else:
