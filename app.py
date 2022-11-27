@@ -31,6 +31,8 @@ def message():
 
         # Insert into the id's respective message box to INSERT the message
         db.execute("INSERT INTO users VALUES ('?');", request.form.get("message"))
+
+        
     return render_template("chatroom.html")
 
 
