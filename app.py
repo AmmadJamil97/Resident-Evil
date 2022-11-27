@@ -29,7 +29,7 @@ def chatroom():
 
     return render_template("chatroom.html",rows=rows)
 
-@app.route("/message")
+@app.route("/message", methods=["GET", "POST"])
 def message():
 
     if request.method == "POST":
