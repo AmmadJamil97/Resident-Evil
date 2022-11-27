@@ -24,7 +24,7 @@ def default():
 @app.route("/message", methods =["POST", "GET"])
 def message():
 
-    if request.form.get == "POST":
+    if request.method == "POST":
 
         # Go into current user's session id
         db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
@@ -32,12 +32,13 @@ def message():
         # Insert into the id's respective message box to INSERT the message
         rows = db.execute("INSERT INTO users (messages) VALUES ('?') WHERE id = ?;", request.form.get("message"), session["user_id"])
 
-        # connect loop in HTML and PY
-        for row in rows:
-            row["username"] = db.execute("SELECT username FROM users WHERE username =?;", session["user_id"])
-            row["message"] = db.execute("SELECT message FROM users WHERE username =?;", session["user_id"])
         # rows = db.execute("SELECT * from")
+        for row in rows:
+            row["username"] = db.execute("SELECT username FROM users WHERE id =?;", session["user_id"])
+            row["message"] = db.execute("SELECT message FROM users WHERE id =?;", session["user_id"])
 
+
+        # # connect loop in HTML and PY
         return redirect("chatroom.html", rows=rows)
 
 
