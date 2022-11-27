@@ -29,6 +29,13 @@ def chatroom():
 
     return render_template("chatroom.html",rows=rows)
 
+@app.route("/message")
+def message():
+
+    rows = db.execute("SELECT * from users WHERE id = ?", session["user_id"])
+
+    return render_template("chatroom.html")
+
 @app.route("/test4")
 def index():
 
