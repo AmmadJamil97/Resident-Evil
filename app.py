@@ -18,6 +18,9 @@ Session(app)
 db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
+def default():
+    return render_template("test4.html")
+    
 def chatroom():
     #return render_template("login.html")
 
