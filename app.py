@@ -52,7 +52,7 @@ def login():
 
         session["user_id"] = rows[0]["id"]
 
-        return redirect("/")
+        return redirect("chatroom.html")
 
     # for GET
     return render_template("login.html")
