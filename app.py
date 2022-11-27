@@ -21,8 +21,16 @@ db = SQL("sqlite:///finalproject.db")
 def default():
     return render_template("test4.html")
 
-@app.route("/chatroom")
-def chatroom():
+@app.route("/message", methods =["POST", "GET"])
+def message():
+
+    if method.form.get == "POST":
+
+        # Go into current user's session id
+        db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
+
+        # Insert into the id's respective message box to INSERT the message
+        db.execute("INSERT INTO users VALUES ('?');", request.form.get("message"))
     return render_template("chatroom.html")
 
 
@@ -56,7 +64,7 @@ def login():
 
         session["user_id"] = rows[0]["id"]
 
-        return redirect("chatroom.html")
+        return render_template("chatroom.html")
 
     # for GET
     return render_template("login.html")
