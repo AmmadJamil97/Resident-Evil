@@ -36,9 +36,9 @@ def message():
 
         db.execute("SELECT * from users WHERE id = ?", session["user_id"])
 
-        db.execute("INSERT INTO users WHERE message = ?", request.method.get())
+        db.execute("INSERT INTO users WHERE message = ?", request.method.get("message"))
 
-
+        return render_template("chatroom.html")
     else:
         return render_template("chatroom.html")
 
