@@ -32,7 +32,10 @@ def message():
         # Insert into the id's respective message box to INSERT the message
         db.execute("INSERT INTO users VALUES ('?');", request.form.get("message"))
 
-        
+        # connect loop in HTML and PY
+        rows = db.execute("SELECT * from")
+
+
     return render_template("chatroom.html")
 
 
