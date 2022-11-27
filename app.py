@@ -21,7 +21,7 @@ db = SQL("sqlite:///finalproject.db")
 def chatroom():
 
 
-    rows = db.execute("SELECT username, messages FROM users WHERE username =?", request.form.get("username"))
+    rows = db.execute("SELECT username, messages FROM users WHERE username =?", session["user_id"])
 
     return render_template("chatroom.html")
 
