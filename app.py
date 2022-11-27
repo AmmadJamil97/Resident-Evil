@@ -27,7 +27,7 @@ def chatroom():
         row["username"]
         row["messages"]
 
-    return render_template("chatroom.html")
+    return render_template("chatroom.html", rows=rows)
 
 @app.route("/test4")
 def index():
