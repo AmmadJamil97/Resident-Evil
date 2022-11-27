@@ -40,7 +40,7 @@ def message():
 
         return render_template("chatroom.html")
     else:
-        return render_template("chatroom.html")
+        return render_template("test4.html")
 
 @app.route("/test4")
 def index():
