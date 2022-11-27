@@ -27,7 +27,7 @@ def chatroom():
 def index():
     rows = db.execute("SELECT * FROM users WHERE username =?", request.form.get("username"))
 
-    
+
     return render_template("test4.html")
 
 @app.route("/about")
@@ -44,7 +44,7 @@ def login():
     if request.method == "POST":
 
         # go in rows for user_id from database
-        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+        rows = db.execute("SELECT  FROM users WHERE username = ?", request.form.get("username"))
 
         # check for WRONG username exist in 2nd row (1st row is title) + OR WRONG password for that username
         if len(rows) != 1:
