@@ -20,11 +20,14 @@ db = SQL("sqlite:///finalproject.db")
 @app.route("/")
 def chatroom():
 
-    
+
     return render_template("chatroom.html")
 
 @app.route("/test4")
 def index():
+    rows = db.execute("SELECT * FROM users WHERE username =?", request.form.get("username"))
+
+    
     return render_template("test4.html")
 
 @app.route("/about")
