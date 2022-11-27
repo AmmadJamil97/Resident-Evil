@@ -19,15 +19,15 @@ db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
 def chatroom():
-    return render_template("login.html")
+    #return render_template("login.html")
 
-    #rows = db.execute("SELECT username, messages FROM users WHERE username =?", session["user_id"])
+    rows = db.execute("SELECT username, messages FROM users WHERE username =?", session["user_id"])
 
-    #for row in rows:
-        #row["username"]
-        #row["messages"]
+    for row in rows:
+        row["username"]
+        row["messages"]
 
-    #return render_template("test4.html")#,rows=rows)
+    return render_template("chatroom.html",rows=rows)
 
 @app.route("/test4")
 def index():
