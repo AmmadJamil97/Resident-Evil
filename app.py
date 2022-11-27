@@ -21,6 +21,10 @@ db = SQL("sqlite:///finalproject.db")
 def default():
     return render_template("test4.html")
 
+@app.route("/chatroom")
+def chatroom():
+    return render_template("chatroom.html")
+
 
 @app.route("/test4")
 def index():
