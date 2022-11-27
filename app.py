@@ -27,10 +27,10 @@ def message():
     if request.method == "POST":
 
         # Go into current user's session id
-        db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
+        rows = db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
 
         # Insert into the id's respective message box to INSERT the message
-        rows = db.execute("INSERT INTO users (messages) VALUES ('?') WHERE id = ?;", request.form.get("message"), session["user_id"])
+        db.execute("INSERT INTO users (messages) VALUES ('?') WHERE id = ?;", request.form.get("message"), session["user_id"])
 
         # rows = db.execute("SELECT * from")
         for row in rows:
