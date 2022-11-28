@@ -35,15 +35,14 @@ def message():
         db.execute("INSERT INTO message (user_id, message) VALUES(?, ?);",session["user_id"], request.form.get("message"))
 
         # rows = db.execute("SELECT * from")
-        for row in rows:
-            row["username"] = db.execute("SELECT username FROM users;")
-            row["message"] = db.execute("SELECT message FROM message;")
+        username1 = db.execute("SELECT username FROM users;")
+        message = db.execute("SELECT message FROM message;")
         people = db.execute("select id from users;")
-        username = ("select message from message where user_id = ?;", people)
+        username = db.execute("select message from message where user_id = ?;", people)
 
 
         # # connect loop in HTML and PY
-        return render_template("chatroom.html", rows=rows, username=username)
+        return render_template("chatroom.html", rows=rows, username=username, username1=username1, message = message)
 
 
     return render_template("chatroom.html")
