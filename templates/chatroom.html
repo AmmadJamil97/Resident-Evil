@@ -19,7 +19,10 @@
 
             <tr>
                 <td>{{ row["username"] }}</td>
-                <td>{{ row["message"] }}</td>
+
+                    {% for message in username %}
+                        <td>{{ row["message"] }}</td>
+                    {% endfor %}
             </tr>
 
     </tbody>
