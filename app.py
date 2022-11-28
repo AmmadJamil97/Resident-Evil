@@ -30,7 +30,7 @@ def message():
         db.execute("SELECT * FROM users WHERE id =?;", session["user_id"])
 
         # Insert into the id's respective message box to INSERT the message
-        db.execute("INSERT INTO users (messages) VALUES(?);", request.form.get("message"))
+        db.execute("INSERT INTO users (message) VALUES(?);", request.form.get("message"))
 
         # rows = db.execute("SELECT * from")
         for row in rows:
