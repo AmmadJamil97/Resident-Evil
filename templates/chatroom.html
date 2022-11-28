@@ -13,23 +13,11 @@
 
     {% for row in rows %}
         <tr>
-            <td>Ammad</td>
-            <td>{{ row["username"] }}</td>
-
-            <td>HI, My name is Ammad
-                Ada banyak variasi tulisan Lorem Ipsum yang tersedia, tapi kebanyakan sudah mengalami perubahan bentuk,
-                        entah karena unsur humor atau kalimat yang diacak hingga nampak sangat tidak masuk akal. Jika anda ingin
-                        menggunakan tulisan Lorem Ipsum, anda harus yakin tidak ada bagian yang memalukan yang tersembunyi di tengah naskah tersebut.
-                        Semua generator Lorem Ipsum di internet cenderung untuk mengulang bagian-bagian tertentu.
-                        Karena itu inilah generator pertama yang sebenarnya di internet. Ia menggunakan kamus perbendaharaan yang terdiri dari 200 kata Latin,
-            </td>
+            <td>{{ row["username"] }}</td></td>
             <td>
-                {{ row["messages"] }}
+                {{ row["message"] }}
             </td>
-
-            <td>13:25</td>
         </tr>
-
     {% endfor %}
 
 </table>

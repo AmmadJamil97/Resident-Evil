@@ -39,7 +39,7 @@ def message():
 
 
         # # connect loop in HTML and PY
-        return redirect("chatroom.html", rows=rows)
+        return render_template("chatroom.html", rows=rows)
 
 
     return render_template("chatroom.html")
