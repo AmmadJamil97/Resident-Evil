@@ -30,11 +30,11 @@ def message():
         rows = db.execute("SELECT * FROM users WHERE id =?;", session["user_id"])
 
         # Insert into the id's respective message box to INSERT the message
-        db.execute("INSERT INTO message (user_id, message) VALUES(?);",session["user_id"], request.form.get("message"))
+        db.execute("INSERT INTO message (user_id, message) VALUES(?, ?);",session["user_id"], request.form.get("message"))
 
         # rows = db.execute("SELECT * from")
         for row in rows:
-            row["message"] = db.execute("SELECT message FROM users WHERE id =?;", session["user_id"])
+            row["message"] = db.execute("SELECT message FROM message WHERE id =?;", session["user_id"])
 
 
         # # connect loop in HTML and PY
