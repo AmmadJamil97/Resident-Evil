@@ -6,6 +6,8 @@
 
 <h1> Chatroom </h1>
 
+
+{% for row in rows %}
 <table class="table">
     <thead>
         <tr>
@@ -14,29 +16,16 @@
         </tr>
     </thead>
     <tbody>
-        {% for row in rows %}
+
             <tr>
                 <td>{{ row["username"] }}</td>
                 <td>{{ row["message"] }}</td>
             </tr>
-        {% endfor %}
+
     </tbody>
 </table>
+{% endfor %}
 
-<table class="table">
-    <th>User</th>
-    <th>Message</th>
-
-    {% for row in rows %}
-        <tr>
-            <td>{{ row["username"] }}</td>
-            <td>
-                {{ row["message"] }}
-            </td>
-        </tr>
-    {% endfor %}
-
-</table>
 
 
 <form action="/message" method="post" class="login-form">
