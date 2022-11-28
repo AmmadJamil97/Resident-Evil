@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, render_template, request, session, flash, redirect
 from cs50 import SQL
 from flask_session import Session
