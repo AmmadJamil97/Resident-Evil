@@ -7,34 +7,6 @@
 <h1> Chatroom </h1>
 
 
-{% for row in rows %}
-<table class="table">
-    <thead>
-        <tr>
-            <td>Name</td>
-            <td>Message</td>
-        </tr>
-    </thead>
-    <tbody>
-
-            <tr>
-                <td>{{ username1 }}
-
-                    <tr>{% for message in username %}
-                        <td>{{ message }}</td>
-                        {% endfor %}
-                    </tr>
-
-                </td>
-
-
-
-            </tr>
-
-    </tbody>
-</table>
-{% endfor %}
-
 
 
 <form action="/message" method="post" class="login-form">

@@ -27,23 +27,7 @@ def default():
 def message():
 
     if request.method == "POST":
-
-        # Go into current user's session id
-        rows = db.execute("SELECT * FROM users WHERE id =?;", session["user_id"])
-
-        # Insert into the id's respective message box to INSERT the message
-        db.execute("INSERT INTO message (user_id, message) VALUES(?, ?);",session["user_id"], request.form.get("message"))
-
-        # rows = db.execute("SELECT * from")
-        username1 = db.execute("SELECT username FROM users;")
-        message = db.execute("SELECT message FROM message;")
-        people = db.execute("select id from users;")
-        username = db.execute("select message from message where user_id = ?;", people)
-
-
-        # # connect loop in HTML and PY
-        return render_template("chatroom.html", rows=rows, username=username, username1=username1, message = message)
-
+        redirect("/")
 
     return render_template("chatroom.html")
 
