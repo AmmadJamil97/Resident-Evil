@@ -35,7 +35,7 @@ def message():
         # rows = db.execute("SELECT * from")
         for row in rows:
             row["username"] = db.execute("SELECT username FROM users;")
-            row["message"] = db.execute("SELECT message FROM message WHERE user_id =?;", session["user_id"])
+            row["message"] = db.execute("SELECT message FROM message WHERE user_id =?;", ("SELECT id FROM users;"))
 
 
         # # connect loop in HTML and PY
