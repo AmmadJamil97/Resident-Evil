@@ -27,7 +27,7 @@ def message():
     if request.method == "POST":
 
         # Go into current user's session id
-        rows = db.execute("SELECT * FROM users WHERE username =?;", session["user_id"])
+        rows = db.execute("SELECT * FROM users WHERE id =?;", session["user_id"])
 
         # Insert into the id's respective message box to INSERT the message
         db.execute("INSERT INTO users (messages) VALUES('?');", request.form.get("message"))
