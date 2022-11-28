@@ -38,10 +38,12 @@ def message():
         for row in rows:
             row["username"] = db.execute("SELECT username FROM users;")
             row["message"] = db.execute("SELECT message FROM message;")
+        people = db.execute("select id from users;")
+        username = ("select message from message where user_id = ?;", people)
 
 
         # # connect loop in HTML and PY
-        return render_template("chatroom.html", rows=rows)
+        return render_template("chatroom.html", rows=rows, username=username)
 
 
     return render_template("chatroom.html")
