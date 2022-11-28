@@ -34,7 +34,6 @@ def message():
 
         # rows = db.execute("SELECT * from")
         for row in rows:
-            row["username"] = db.execute("SELECT username FROM users WHERE id =?;", session["user_id"])
             row["message"] = db.execute("SELECT message FROM users WHERE id =?;", session["user_id"])
 
 
