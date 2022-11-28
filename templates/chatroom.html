@@ -7,6 +7,29 @@
 <h1> Chatroom </h1>
 
 <table class="table">
+    <thead>
+        <tr>
+            <td>Symbol</td>
+            <td>Name</td>
+            <td>Shares</td>
+            <td>Price</td>
+            <td>TOTAL</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row["symbol"] }}</td>
+                <td>{{ row["company"] }}</td>
+                <td>{{ row["shares"] }}</td>
+                <td>{{ row["price"] }}</td>
+                <td>{{ row["total_price"] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<table class="table">
     <th>User</th>
     <th>Message</th>
 
