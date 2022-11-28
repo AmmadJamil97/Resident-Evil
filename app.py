@@ -46,7 +46,7 @@ def message():
         return render_template("chatroom.html", rows=rows, username=username)
 
 
-    return redirect("/message")
+    return render_template("chatroom.html")
 
 
 @app.route("/test4")
