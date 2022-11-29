@@ -15,8 +15,9 @@
     </thead>
 
     <tbody>
+        {% for total_messages in total_messages %}
         <tr>
-            <td rowspan="2">{{ userid_in_messagetable }}</td>
+            <td rowspan="2">{{ total_messages }}</td>
             <td>{{ total_messages }}</td>
         </tr>
 
@@ -32,6 +33,7 @@
         <tr>
             <td>Hello</td>
         </tr>
+        {% endfor %}
     </tbody>
 </table>
 
