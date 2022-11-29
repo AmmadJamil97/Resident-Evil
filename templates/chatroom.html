@@ -16,23 +16,10 @@
 
     <tbody>
         {% for row in rows %}
-        <tr>
-            <td rowspan="2">{{ username }}</td>
-            <td>{{ message }}</td>
-        </tr>
-
-        <tr>
-            <td>eh</td>
-        </tr>
-
-        <tr>
-            <td rowspan="2">Ammad</td>
-            <td>Hello</td>
-        </tr>
-
-        <tr>
-            <td>Hello</td>
-        </tr>
+            <tr>
+                <td rowspan="{{ row['id'] }}">{{ username }}</td>
+                <td>{{ row["message"] }}</td>
+            </tr>
         {% endfor %}
     </tbody>
 </table>
