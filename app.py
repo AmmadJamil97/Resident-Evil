@@ -31,7 +31,7 @@ def message():
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
 
-        rows = db.execute("select id from message where user_id = ?;", session["user_id"])[0]["id"]
+        rows = db.execute("select id from message where user_id = ?;", session["user_id"])
 
         for row in rows:
             row["message"] = db.execute("select message from message where id = ?;", rows)
