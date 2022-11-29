@@ -15,16 +15,22 @@
     </thead>
 
     <tbody>
-        <!--Create loop to print multiple rows with different username-->
+        <tr>
+            <td rowspan="2">{% username %}</td>
+            <td>Hello</td>
+        </tr>
 
         <tr>
-            <td rowspan="7">Ammad</td>
-            <!--Create loop to print multiple rows with different message-->
             <td>Hello</td>
-            <td>Hello</td>
-            <td>Hello</td>
-            <td>Hello</td>
+        </tr>
 
+        <tr>
+            <td rowspan="2">Ammad</td>
+            <td>Hello</td>
+        </tr>
+
+        <tr>
+            <td>Hello</td>
         </tr>
     </tbody>
 </table>
