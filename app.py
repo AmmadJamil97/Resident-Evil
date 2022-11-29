@@ -34,7 +34,7 @@ def message():
         userid_in_messagetable = db.execute("select user_id from message;")
 
         for total_messages in userid_in_messagetable:
-            total_messages = db.execute("select message from message where user_id = ?;", userid_in_messagetable)
+            total_messages = db.execute("select message from message where user_id = ?;", userid_in_messagetable)[0]["message"]
 
         return render_template("chatroom.html", total_messages=total_messages, userid_in_messagetable=userid_in_messagetable)
 
