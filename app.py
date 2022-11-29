@@ -27,7 +27,7 @@ def default():
 def message():
 
     if request.method == "POST":
-        redirect("/")
+        redirect("chatroom.html")
 
     return render_template("chatroom.html")
 
