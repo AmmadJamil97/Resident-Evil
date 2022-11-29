@@ -34,7 +34,7 @@ def message():
         rows = db.execute("select id from message where user_id = ?;", session["user_id"])
 
         for row in rows:
-            row["message"] = db.execute("select message from message where usid = ?;", 1)
+            row["message"] = db.execute("select message from message where user_id = ?;", session["user_id"])
 
         return render_template("chatroom.html", rows=rows)
 
