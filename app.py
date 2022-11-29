@@ -33,7 +33,7 @@ def message():
 
         messages = db.execute("select message from message where user_id = ?;", session["user_id"])[0]["message"]
 
-        return render_template("chatroom.html", username=username)
+        return render_template("chatroom.html", username=username, messages=messages)
 
     return render_template("chatroom.html")
 
