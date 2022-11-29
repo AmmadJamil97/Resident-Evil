@@ -31,7 +31,8 @@ def message():
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
 
-        messages = db.execute("select message from message where user_id = ?;", session["user_id"])[0]["message"]
+        for x in mesej:
+            messages = db.execute("select message from message where user_id = ?;", session["user_id"])[0]["message"]
 
         return render_template("chatroom.html", username=username, messages=messages)
 
