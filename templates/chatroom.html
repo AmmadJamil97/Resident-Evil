@@ -15,10 +15,10 @@
     </thead>
 
     <tbody>
-        {% for total_messages in userid_in_messagetable %}
+        {% for row in rows %}
         <tr>
-            <td rowspan="2">{{ userid_in_messagetable }}</td>
-            <td>{{ total_messages }}</td>
+            <td rowspan="2">{{ username }}</td>
+            <td>{{ row["message"] }}</td>
         </tr>
 
         <tr>
