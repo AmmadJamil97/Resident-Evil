@@ -27,7 +27,10 @@ def default():
 def message():
 
     if request.method == "POST":
-        redirect("chatroom.html")
+
+        username = ("select username from users;")
+        
+        redirect("chatroom.html", username=username)
 
     return render_template("chatroom.html")
 
