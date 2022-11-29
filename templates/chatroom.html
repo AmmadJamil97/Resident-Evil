@@ -6,17 +6,25 @@
 
 <h1> Chatroom </h1>
 
-<thead>
-    <tr>
-        <td>Name</td>
-        <td>Message</td>
-    </tr>
-</thead>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name:</td>
+            <td>Message:</td>
+        </tr>
+    </thead>
 
-    <tr>
-        <td>Ammad</td>
-        <td>Hello</td>
-    </tr>
+    <tbody>
+        <!--Create loop to print multiple rows with different username-->
+
+        <tr>
+            <td>Ammad</td>
+            <!--Create loop to print multiple rows with different message-->
+            <tr>Hello</td>
+            <td>Hello</td>
+        </tr>
+    </tbody>
+</table>
 
 
 <form action="/message" method="post" class="login-form">
@@ -27,7 +35,5 @@
         <button class="hero-btn submit-btn" type="submit" name="submit">Send Message</button>
     </div>
 </form>
-
-</div>
 
 {% endblock %}
