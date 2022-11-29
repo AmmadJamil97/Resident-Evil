@@ -29,14 +29,14 @@ def message():
     if request.method == "POST":
 
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
-        username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
+        # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
 
         userid_in_messagetable = db.execute("select user_id from message;")
 
         for total_messages in userid_in_messagetable:
             total_messages = db.execute("select message from message where user_id = ?;", userid_in_messagetable)
 
-        return render_template("chatroom.html", total_messages=total_messages, username=username)
+        return render_template("chatroom.html", total_messages=total_messages, userid_in_messagetable=userid_in_messagetable)
 
     return render_template("chatroom.html")
 
