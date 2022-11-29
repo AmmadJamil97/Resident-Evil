@@ -28,9 +28,9 @@ def message():
 
     if request.method == "POST":
 
-        username = ("select username from users;")
-        
-        redirect("chatroom.html", username=username)
+        username = db.execute("select username from users where id = ?;", session["user_id"])
+
+        return render_template("chatroom.html", username=username)
 
     return render_template("chatroom.html")
 
