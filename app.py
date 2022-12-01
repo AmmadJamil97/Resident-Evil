@@ -22,6 +22,7 @@ db = SQL("sqlite:///finalproject.db")
 @app.route("/")
 def messages():
     usernames = db.execute("SELECT username from users;")
+    names = [usernames]
 
 
     MESSAGES = db.execute('SELECT * from message where user_id IN (SELECT id FROM users WHERE username = "?");', usernames)
