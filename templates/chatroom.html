@@ -6,6 +6,12 @@
 
 <h1> Chatroom </h1>
 
+<p>
+    {% for x in names %}
+        {{ x["names"] }}
+    {% endfor %}
+</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -17,7 +23,8 @@
     <tbody>
             <tr>
                 {% for x in names %}
-                <td>{{names}}</td>
+                <td>{{ x["names"] }}</td>
+                {% endfor %}
                 <td>Helo</td>
             </tr>
 
