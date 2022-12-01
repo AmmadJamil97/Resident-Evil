@@ -29,7 +29,6 @@ def message():
         return render_template("test4.html")
 
 
-new 28/11/2022
         # Go into current user's session id
         rows = db.execute("SELECT * FROM users WHERE id =?;", session["user_id"])
 
@@ -46,3 +45,6 @@ new 28/11/2022
         # # connect loop in HTML and PY
         return render_template("chatroom.html", rows=rows, username=username, username1=username1, message = message)
 
+new 01/12/2022
+<!--{% for row in rows %}{% endfor %}td rowspan="{{ row['id'] }}">{{ username }}</td
+                <td>{{ row["message"] }}</td>-->
