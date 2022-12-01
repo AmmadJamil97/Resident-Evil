@@ -29,9 +29,14 @@ def messages():
 @app.route("/message", methods =["POST", "GET"])
 def message():
 
+    if session.get("user_id") is None:
+            return redirect("/login")
+
     if request.method == "POST":
 
-        
+        if session.get("user_id") is None:
+            return redirect("/login")
+
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
 
