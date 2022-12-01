@@ -35,6 +35,7 @@ def message():
         for new_messages in total_messages:
             new_messages = db.execute("SELECT message from message WHERE id = 1;")
             while db.execute("SELECT message from message WHERE user_id = ?;", new_messages)
+            new_messages = 
 
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
