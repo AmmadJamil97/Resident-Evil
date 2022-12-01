@@ -4,7 +4,11 @@
 
 {% block main %}
 
-<h1> Chatroom : {{names}} </h1>
+<h1> Chatroom : {{names}}
+    {% for new_messages in total_messages %}
+        {{new_messages["messages"]}}
+    {% endfor %}
+     </h1>
 
 <table class="table">
     <thead>
@@ -17,7 +21,7 @@
     <tbody>
             <tr>
                 <td>{{names}}</td>
-                <td>Helo</td>
+                <td>{{messages}}</td>
             </tr>
 
             <tr>

@@ -28,11 +28,12 @@ def message():
 
     if request.method == "POST":
         names = db.execute("SELECT username from users;")[0]["username"]
+        messages = db.execute("SELECT message from message;")[0]["message"]
         db.execute("INSERT INTO message (user_id, message) VALUES (?, ?);", session["user_id"], request.form.get("message"))
 
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
-        return render_template("chatroom.html", names=names)
+        return render_template("chatroom.html", names=names, messages=messages)
 
     return render_template("chatroom.html")
 
