@@ -29,9 +29,6 @@ def messages():
 @app.route("/message", methods =["POST", "GET"])
 def message():
 
-    if session.get("user_id") is None:
-            return redirect("/login")
-
     if request.method == "POST":
 
         if session.get("user_id") is None:
@@ -44,9 +41,11 @@ def message():
 
         return redirect("/")
 
-    usernames = db.execute("SELECT username from users;")
-    MESSAGES = db.execute('SELECT * from message;')
-    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
+    if request.method == "GET":
+
+        usernames = db.execute("SELECT username from users;")
+        MESSAGES = db.execute('SELECT * from message;')
+        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
 
 
 @app.route("/test4")
