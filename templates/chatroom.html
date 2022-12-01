@@ -12,33 +12,5 @@
 
 {% endfor %}
 
-<table class="table">
-    <thead>
-        <tr>
-            <td>Name:</td>
-            <td>Message:</td>
-        </tr>
-    </thead>
-
-    <tbody>
-            <tr>
-                <td>{{names}}</td>
-                <td>{{messages}}</td>
-            </tr>
-
-            <tr>
-            </tr>
-    </tbody>
-</table>
-
-
-<form action="/message" method="post" class="login-form">
-    <div> <!--div - input will create username and password box on top-->
-        <input required class="namenpass-box" type="text" placeholder="Message" name="message" id="message">
-    </div>
-    <div>
-        <button class="hero-btn submit-btn" type="submit" name="submit">Send Message</button>
-    </div>
-</form>
 
 {% endblock %}

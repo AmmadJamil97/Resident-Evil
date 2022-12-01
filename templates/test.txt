@@ -70,3 +70,33 @@ new 01/12/2022
                 AND flights.day = 29
                 ORDER BY flights.hour, flights.minute
                 LIMIT 1;
+
+01/12/2022 from chatroom.html
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name:</td>
+            <td>Message:</td>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>{{names}}</td>
+                <td>{{messages}}</td>
+            </tr>
+
+            <tr>
+            </tr>
+    </tbody>
+</table>
+
+
+<form action="/message" method="post" class="login-form">
+    <div> <!--div - input will create username and password box on top-->
+        <input required class="namenpass-box" type="text" placeholder="Message" name="message" id="message">
+    </div>
+    <div>
+        <button class="hero-btn submit-btn" type="submit" name="submit">Send Message</button>
+    </div>
+</form>
