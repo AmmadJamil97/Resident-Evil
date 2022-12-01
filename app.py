@@ -36,14 +36,13 @@ def message():
             id_count = 1
             db.execute("select id from messages where user_id IN (select id from users where id = ?);", id_count)
             new_messages = db.execute("SELECT message from message WHERE id = 1;")
-            while db.execute("SELECT message from message WHERE user_id = ?;", new_messages)
             id_count = id_count + 1
             total_messages = db.execute("SELECT MAX(id) from users;")
 
 
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
-        return render_template("chatroom.html", names=names, messages=messages)
+        return render_template("chatroom.html", names=names, messages=messages, new_messages=new_messages)
 
     return render_template("chatroom.html")
 
