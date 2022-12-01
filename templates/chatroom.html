@@ -12,5 +12,15 @@
 
 {% endfor %}
 
+{% for newvariable in books %}
+
+        <h2>{{ newvariable["title"] }}</h2>
+        <form action="/cart" method="post">
+            <input name="id" type="hidden" value= "{{ newvariable['id'] }}">
+            <input type="submit" value="Add to Cart">
+        </form>
+
+{% endfor %}
+
 
 {% endblock %}
