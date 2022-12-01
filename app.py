@@ -28,7 +28,7 @@ def message():
 
     if request.method == "POST":
 
-        db.execute
+        db.execute("INSERT INTO message (message) VALUES (?);")
 
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
