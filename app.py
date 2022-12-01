@@ -30,13 +30,18 @@ def messages():
 def message():
 
     if request.method == "POST":
-        if 
 
+        usernames = db.execute("SELECT username from users;")
+
+        MESSAGES = db.execute('SELECT * from message;')
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
-        return render_template("chatroom.html")
 
-    return render_template("chatroom.html")
+        db.execute = ("INSERT INTO message (message) VALUES (?)", request.form.get("message"))
+
+        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
+
+    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
 
 
 @app.route("/test4")
