@@ -10,9 +10,11 @@
 
     <p>
         {{ jinja_var["username"] }} :
-        {% for jinja_var in messages %}
-            {{ jinja_var["message"] }}<br>
-        {% endfor %}
+
+
+                {% for jinja_var in messages %}
+                    {{ jinja_var["message"] }}<br>
+                {% endfor %}
     </p>
 
 {% endfor %}
