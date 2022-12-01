@@ -4,11 +4,13 @@
 
 {% block main %}
 
-<h1> Chatroom : {{names}}
-    {% for new_messages in total_messages %}
-        {{new_messages["messages"]}}
-    {% endfor %}
-     </h1>
+<h1>Chatroom</h1>
+
+{% for jinja_var in messages %}
+
+    <h2>{{ jinja_var["message"] }}</h2>
+
+{% endfor %}
 
 <table class="table">
     <thead>
@@ -25,7 +27,6 @@
             </tr>
 
             <tr>
-
             </tr>
     </tbody>
 </table>

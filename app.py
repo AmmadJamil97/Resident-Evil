@@ -20,8 +20,9 @@ Session(app)
 db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
-def default():
-    return render_template("test4.html")
+def messages():
+    MESSAGES = ("SELECT * from message;")
+    return render_template("chatroom.html", messages = MESSAGES)
 
 @app.route("/message", methods =["POST", "GET"])
 def message():
