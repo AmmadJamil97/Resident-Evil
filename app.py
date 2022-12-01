@@ -27,7 +27,7 @@ def default():
 def message():
 
     if request.method == "POST":
-        names = db.execute("SELECT username from users;")
+        names = db.execute("SELECT username from users;")[0]["username"]
         db.execute("INSERT INTO message (user_id, message) VALUES (?, ?);", session["user_id"], request.form.get("message"))
 
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
