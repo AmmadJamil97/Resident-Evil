@@ -32,7 +32,7 @@ def message():
         db.execute("INSERT INTO message (user_id, message) VALUES (?, ?);", session["user_id"], request.form.get("message"))
 
 
-        for new_messages in total_messages:
+        for messages_id in total_messages:
             id_count = 1
             db.execute("select id from messages where user_id IN (select id from users where id = ?);", id_count)
             new_messages = db.execute("SELECT message from message WHERE id = 1;")
