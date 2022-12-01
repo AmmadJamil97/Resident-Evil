@@ -34,7 +34,7 @@ def message():
 
         for new_messages in total_messages:
             id_count = 1
-            db.execute("select id from messages where user_id (select id from users where id = ?);", id_count)
+            db.execute("select id from messages where user_id IN (select id from users where id = ?);", id_count)
             new_messages = db.execute("SELECT message from message WHERE id = 1;")
             while db.execute("SELECT message from message WHERE user_id = ?;", new_messages)
             id_count = id_count + 1
