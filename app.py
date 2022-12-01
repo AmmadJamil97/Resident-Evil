@@ -23,8 +23,10 @@ db = SQL("sqlite:///finalproject.db")
 def messages():
 
     max = ("SELECT MAX(id) FROM message;")
-    for MESSAGES in max:
-    MESSAGES = db.execute("SELECT * from message where user_id =?;", 2)
+    messages_id = 1
+    for messages_id in max:
+        MESSAGES = db.execute("SELECT * from message where user_id =?;", 2)
+        messages_id = messages_id + 1
     return render_template("chatroom.html", messages = MESSAGES)
 
 @app.route("/message", methods =["POST", "GET"])
