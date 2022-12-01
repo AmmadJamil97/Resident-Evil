@@ -22,7 +22,7 @@ db = SQL("sqlite:///finalproject.db")
 @app.route("/")
 def messages():
 
-    for x in 
+    for ("SELECT ") in
     user_id = 1
     MESSAGES = db.execute("SELECT * from message where user_id =?;", 2)
     return render_template("chatroom.html", messages = MESSAGES)
