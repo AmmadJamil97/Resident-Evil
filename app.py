@@ -41,7 +41,7 @@ def message():
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
         # username = db.execute("select username from users where id = ?;", session["user_id"])[0]["username"]
 
-        db.execute("INSERT INTO message (message) VALUES (?)", request.form.get("message"))
+        db.execute("INSERT INTO message (user_id, message) VALUES (?, ?)", session["user_id"], request.form.get("message"))
 
         return redirect("/")
 
