@@ -28,7 +28,9 @@ def messages():
     usernames = db.execute("SELECT username from users;")
 
     MESSAGES = db.execute('SELECT * from message;')
-    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
+
+    current_user = session.get("user_id")
+    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user)
 
 @app.route("/message", methods =["POST", "GET"])
 def message():
