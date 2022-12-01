@@ -6,6 +6,10 @@
 
 <h1>Chatroom</h1>
 
+
+<h1 href="/logout" class="hero-btn">Logout Here!</h1>
+<p>Currently Logged in as {{current_user}}</p>
+
 {% for jinja_var in usernames %}
 
     <p>
@@ -29,8 +33,5 @@
 </form>
 
 
-<form action="/logout" method>
-    <div></div>
-</form>
 
 {% endblock %}
