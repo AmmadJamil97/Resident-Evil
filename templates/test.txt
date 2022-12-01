@@ -100,3 +100,6 @@ new 01/12/2022
         <button class="hero-btn submit-btn" type="submit" name="submit">Send Message</button>
     </div>
 </form>
+
+
+usernames = db.execute("SELECT username from users where id IN (SELECT user_id from message);")

@@ -21,8 +21,10 @@ db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
 def messages():
-    MESSAGES = db.execute("SELECT user_id, message from message;")
-    usernames = db.execute("SELECT username from users where id IN (SELECT user_id from message);")
+    usernames = db.execute("SELECT username from users;")
+
+
+    MESSAGES = db.execute("SELECT message from message WHERE user_id = ?;", usernames)
     return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
 
 @app.route("/message", methods =["POST", "GET"])

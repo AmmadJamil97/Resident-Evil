@@ -6,14 +6,13 @@
 
 <h1>Chatroom</h1>
 
-{% for jinja_var in messages %}
+{% for jinja_var in usernames %}
 
     <p>
-        {% for jinja_var in usernames %}
-            {{ jinja_var["username"] }}
+        {{ jinja_var["username"] }} :
+        {% for jinja_var in messages %}
+            {{ jinja_var["message"] }}<br>
         {% endfor %}
-
-        : {{ jinja_var["message"] }}
     </p>
 
 {% endfor %}
