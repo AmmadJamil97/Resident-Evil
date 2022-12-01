@@ -38,6 +38,7 @@ def message():
             new_messages = db.execute("SELECT message from message WHERE id = 1;")
             while db.execute("SELECT message from message WHERE user_id = ?;", new_messages)
             id_count = id_count + 1
+            total_messages = db.execute("SELECT MAX(id) from users;")
 
 
         # insert [0]["username"] at the end TRICK to remove [{'username': 'Haziq'}] and display just Haziq
