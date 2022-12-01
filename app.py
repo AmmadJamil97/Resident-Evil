@@ -21,6 +21,10 @@ db = SQL("sqlite:///finalproject.db")
 
 @app.route("/")
 def messages():
+
+    if session.get("user_id") is None:
+            return redirect("/login")
+            
     usernames = db.execute("SELECT username from users;")
 
     MESSAGES = db.execute('SELECT * from message;')
