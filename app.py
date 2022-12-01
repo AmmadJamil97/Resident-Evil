@@ -29,7 +29,7 @@ def messages():
 
     MESSAGES = db.execute('SELECT * from message;')
 
-    current_user = session["user_id"]
+    current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
     return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user)
 
 @app.route("/message", methods =["POST", "GET"])
@@ -86,7 +86,8 @@ def login():
 
         usernames = db.execute("SELECT username from users;")
         MESSAGES = db.execute('SELECT * from message;')
-        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
+        current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
+        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames,current_user=current_user)
 
     # for GET
     return render_template("login.html")
