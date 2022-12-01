@@ -24,7 +24,7 @@ def messages():
 
     if session.get("user_id") is None:
             return redirect("/login")
-            
+
     usernames = db.execute("SELECT username from users;")
 
     MESSAGES = db.execute('SELECT * from message;')
@@ -82,7 +82,9 @@ def login():
 
         session["user_id"] = rows[0]["id"]
 
-        return render_template("chatroom.html")
+        usernames = db.execute("SELECT username from users;")
+        MESSAGES = db.execute('SELECT * from message;')
+        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
 
     # for GET
     return render_template("login.html")
