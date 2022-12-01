@@ -23,9 +23,7 @@ db = SQL("sqlite:///finalproject.db")
 def messages():
 
     max = ("SELECT MAX(id) FROM message;")
-    for x in max:
-        
-    user_id = 1
+    for MESSAGES in max:
     MESSAGES = db.execute("SELECT * from message where user_id =?;", 2)
     return render_template("chatroom.html", messages = MESSAGES)
 
