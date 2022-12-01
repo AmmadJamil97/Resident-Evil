@@ -8,12 +8,13 @@
 
 {% for jinja_var in messages %}
 
-    <h2>
+    <p>
         {% for jinja_var in usernames %}
             {{ jinja_var["username"] }}
         {% endfor %}
 
-        : {{ jinja_var["message"] }}</h2>
+        : {{ jinja_var["message"] }}
+    </p>
 
 {% endfor %}
 
