@@ -22,6 +22,8 @@ db = SQL("sqlite:///finalproject.db")
 @app.route("/")
 def messages():
 
+    session.clear()
+
     if session.get("user_id") is None:
             return redirect("/login")
 
