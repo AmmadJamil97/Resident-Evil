@@ -1,8 +1,39 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Jaewon Hungary</title>
+    <link rel="stylesheet" href="/static/styles3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
 
-{% block title %}: About {% endblock %}
-
-{% block main %}
+        <a href="/test4">
+            <img src="/static/jaewon.png">
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <!--below to add anchor to make nav links clickable-->
+                <li><a href="/test4">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                {% if session["user_id"] %}
+                    <li><a class="hero-btn" href="/">Chatroom</a></li>
+                    <li><a class="hero-btn" href="/logout">Logout Here</a></li>
+                {% else %}
+                    <li><a href="/register">REGISTER</a></li>
+                    <li><a href="/login">LOG IN</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
 
     <h1>About Us</h1>
 
