@@ -129,3 +129,10 @@ def register():
 @app.route("/apology")
 def apology():
     return render_template("apology.html")
+
+
+@app.route("/logout")
+def logout():
+    session.clear()
+
+    return redirect("/")
