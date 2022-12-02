@@ -46,18 +46,6 @@ def message():
 
         db.execute("INSERT INTO message (user_id, message) VALUES (?, ?)", session["user_id"], request.form.get("message"))
 
-
-        # 1st idea
-        # create a key value pair of dicts for KEY=username, VALUE=messages, together PAIRS
-        PAIRS = {'username' : ['messages']}
-
-        min =db.execute("SELECT MIN(id) FROM message;")
-        max = db.execute("SELECT MAX(id) FROM message;")
-        for id in range (min, max):
-            if (db.execute("SELECT username FROM users;")) = ()
-            id += 1
-
-
         # 2nd idea
         # create just a list first for username
         names = []
@@ -68,13 +56,6 @@ def message():
         for x in range(max_id_users):
             names.append(db.execute("SELECT username FROM users;"))
             x +=1
-
-
-        messages = []
-
-        y = 1
-        for y in range
-
 
 
 

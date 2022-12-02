@@ -103,3 +103,22 @@ new 01/12/2022
 
 
 usernames = db.execute("SELECT username from users where id IN (SELECT user_id from message);")
+
+
+02/12/2022
+
+        # 1st idea
+        # create a key value pair of dicts for KEY=username, VALUE=messages, together PAIRS
+        PAIRS = {'username' : ['messages']}
+
+        min =db.execute("SELECT MIN(id) FROM message;")
+        max = db.execute("SELECT MAX(id) FROM message;")
+        for id in range (min, max):
+            if (db.execute("SELECT username FROM users;")) = ()
+            id += 1
+
+
+        messages = []
+
+        y = 1
+        for y in range
