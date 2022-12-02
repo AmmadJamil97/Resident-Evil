@@ -35,6 +35,7 @@ def messages():
 
     max_id_users = db.execute("SELECT MAX(id) FROM users;")
 
+    x=1
     for x in max_id_users:
         names.append(db.execute("SELECT username FROM users;"))
         x +=1
