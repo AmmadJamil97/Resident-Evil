@@ -27,14 +27,7 @@ def messages():
 
     usernames = db.execute("SELECT username from users;")
 
-    # MESSAGES = db.execute('SELECT * from message;')
-    # 4th try: create loop for id = 0
-
-    min_id_users = db.execute("SELECT MIN(id) FROM users;")
-    max_id_users = db.execute("SELECT MAX(id) FROM users;")
-    for x in range ( min_id_users, max_id_users):
-        MESSAGES = db.execute("SELECT * from message WHERE id = ?;", x)
-        x+=1
+    MESSAGES = db.execute('SELECT * from message;')
 
     current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
 
