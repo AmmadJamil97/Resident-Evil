@@ -36,7 +36,7 @@ def messages():
     max_id_users = db.execute("SELECT MAX(id) FROM users;")
 
     x=1
-    while x <= max_id_users:
+    while x <= 15:
         names.append(db.execute("SELECT username FROM users;"))
         x +=1
 
