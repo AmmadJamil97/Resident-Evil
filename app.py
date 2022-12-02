@@ -46,6 +46,11 @@ def message():
 
         db.execute("INSERT INTO message (user_id, message) VALUES (?, ?)", session["user_id"], request.form.get("message"))
 
+        # create a key value pair of dicts for KEY=username, VALUE=messages, together PAIRS
+        PAIRS = {'username' : ['messages']}
+
+        print(PAIRS)
+
         return redirect("/")
 
     if request.method == "GET":
