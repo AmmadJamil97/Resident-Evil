@@ -9,17 +9,8 @@
 
 <p style="color: red;">Currently Logged in as : {{current_user}} </p>
 
-{% for jinja_var in usernames %}
-
-    <h3 style="color: white">
-        <p style="color:maroon">{{ jinja_var["username"] }} :</p>
-
-
-                {% for jinja_var in messages %}
-                    {{ jinja_var["message"] }} {{ jinja_var["username"] }}<br>
-                {% endfor %}
-    </h3>
-
+{% for jinja_var in messages %}
+    {{ jinja_var["username"] }}: {{ jinja_var["message"] }} <br>
 {% endfor %}
 
 <form action="/message" method="post" class="login-form">
