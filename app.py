@@ -31,18 +31,7 @@ def messages():
 
     current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
 
-    # 2nd idea
-    # create just a list first for username
-    names = []
-
-    max_id_users = db.execute("SELECT MAX(id) FROM users;")
-
-    x = 1
-    for x in range(max_id_users):
-        names.append(db.execute("SELECT username FROM users;"))
-        x +=1
-
-    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user, names= names)
+    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user)
 
 @app.route("/message", methods =["POST", "GET"])
 def message():
