@@ -52,8 +52,8 @@ def message():
         min =db.execute("SELECT MIN(id) FROM message;")
         max = db.execute("SELECT MAX(id) FROM message;")
         for id in message (min, max):
-
-            id =+ 1
+            if db.execute
+            id += 1
 
 
         return redirect("/")
