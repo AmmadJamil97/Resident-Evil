@@ -66,6 +66,7 @@ def message():
             
 
 
+
         return redirect("/")
 
     if request.method == "GET":
