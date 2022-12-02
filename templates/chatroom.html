@@ -16,7 +16,7 @@
 
 
                 {% for jinja_var in messages %}
-                    {{ jinja_var["message"] }}<br>
+                    {{ jinja_var["message"] }} {{ jinja_var["username"] }}<br>
                 {% endfor %}
     </h3>
 
