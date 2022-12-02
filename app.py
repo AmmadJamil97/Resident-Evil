@@ -26,7 +26,11 @@ def messages():
             return redirect("/login")
 
     # last trial of copy from finance
-    rows = db.execute("SELECT ;")
+    rows = db.execute("SELECT message FROM message WHERE user_id = ?;", session["user_id"])
+
+    x=0
+    for row in rows:
+        
 
     usernames = db.execute("SELECT username from users;")
 
