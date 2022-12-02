@@ -65,7 +65,7 @@ def message():
 
         usernames = db.execute("SELECT username from users;")
         MESSAGES = db.execute('SELECT * from message;')
-        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
+        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, names = names)
 
 
 @app.route("/test4")
