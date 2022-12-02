@@ -49,8 +49,11 @@ def message():
         # create a key value pair of dicts for KEY=username, VALUE=messages, together PAIRS
         PAIRS = {'username' : ['messages']}
 
-        max = db.execute(";")
+        min =db.execute("SELECT MIN(id) FROM message;")
+        max = db.execute("SELECT MAX(id) FROM message;")
         for id in message (min, max):
+
+            id =+ 1
 
 
         return redirect("/")
