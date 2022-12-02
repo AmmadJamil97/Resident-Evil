@@ -31,14 +31,7 @@ def messages():
 
     current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
 
-    names = []
-
-    max_id_users = db.execute("SELECT MAX(id) FROM users;")
-
-    while (db.execute("SELECT id FROM users;")) <= (max_id_users):
-        names.append(db.execute("SELECT username FROM users WHERE id <= ?;", max_id_users))
-
-    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user, names=names)
+    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user)
 
 @app.route("/message", methods =["POST", "GET"])
 def message():
@@ -53,18 +46,6 @@ def message():
 
         db.execute("INSERT INTO message (user_id, message) VALUES (?, ?)", session["user_id"], request.form.get("message"))
 
-        # 2nd idea
-        # create just a list first for username
-        names = []
-
-        max_id_users = db.execute("SELECT MAX(id) FROM users;")
-
-        x = 1
-        for x in range(max_id_users):
-            names.append(db.execute("SELECT username FROM users;"))
-            x +=1
-
-
 
         return redirect("/")
 
@@ -72,7 +53,7 @@ def message():
 
         usernames = db.execute("SELECT username from users;")
         MESSAGES = db.execute('SELECT * from message;')
-        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, names = names)
+        return render_template("chatroom.html", messages = MESSAGES, usernames=usernames)
 
 
 @app.route("/test4")

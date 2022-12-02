@@ -122,3 +122,17 @@ usernames = db.execute("SELECT username from users where id IN (SELECT user_id f
 
         y = 1
         for y in range
+
+# 2nd idea
+        # create just a list first for username
+        names = []
+
+        max_id_users = db.execute("SELECT MAX(id) FROM users;")
+
+        x = 1
+        for x in range(max_id_users):
+            names.append(db.execute("SELECT username FROM users;"))
+            x +=1
+
+, names = names
+
