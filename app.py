@@ -25,22 +25,13 @@ def messages():
     if session.get("user_id") is None:
             return redirect("/login")
 
-    # last trial of copy from finance
-    rows = db.execute("SELECT message FROM message WHERE user_id = ?;", session["user_id"])
-
-    x=1
-    for row in rows:
-        row["message"] = db.execute("SELECT * FROM message WHERE id = ?", x)
-        x+=1
-
-
     usernames = db.execute("SELECT username from users;")
 
     MESSAGES = db.execute('SELECT * from message;')
 
     current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
 
-    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user, rows=rows)
+    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user)
 
 @app.route("/message", methods =["POST", "GET"])
 def message():
