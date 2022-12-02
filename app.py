@@ -60,6 +60,10 @@ def message():
 
         # 2nd idea
         # create just a list first
+        names = []
+
+        for name in names:
+            
 
 
         return redirect("/")
