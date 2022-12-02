@@ -27,7 +27,7 @@ def messages():
 
     usernames = db.execute("SELECT username from users;")
 
-    MESSAGES = db.execute('SELECT * from message;')
+    MESSAGES = db.execute("select username,message from users, message where users.id = message.user_id;")
 
     current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
 
