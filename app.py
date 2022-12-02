@@ -29,7 +29,7 @@ def messages():
     rows = db.execute("SELECT message FROM message WHERE user_id = ?;", session["user_id"])
 
     for row in rows:
-        row["message"]
+        row["message"] = db.execute("SELECT message FROM message")
 
 
     usernames = db.execute("SELECT username from users;")
