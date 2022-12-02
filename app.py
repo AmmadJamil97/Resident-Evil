@@ -46,6 +46,8 @@ def message():
 
         db.execute("INSERT INTO message (user_id, message) VALUES (?, ?)", session["user_id"], request.form.get("message"))
 
+
+        # 1st idea
         # create a key value pair of dicts for KEY=username, VALUE=messages, together PAIRS
         PAIRS = {'username' : ['messages']}
 
@@ -54,6 +56,10 @@ def message():
         for id in range (min, max):
             if (db.execute("SELECT username FROM users;")) = ()
             id += 1
+
+
+        # 2nd idea
+        # create just a list first
 
 
         return redirect("/")
