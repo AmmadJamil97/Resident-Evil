@@ -28,9 +28,9 @@ def messages():
     # last trial of copy from finance
     rows = db.execute("SELECT message FROM message WHERE user_id = ?;", session["user_id"])
 
-    x=0
+    x=1
     for row in rows:
-        row["message"] = db.execute("SELECT message FROM message")[x]["message"]
+        row["message"] = db.execute("SELECT * FROM message WHERE id = ?", x)
         x+=1
 
 
