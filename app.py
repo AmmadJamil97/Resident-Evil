@@ -49,7 +49,8 @@ def message():
         # create a key value pair of dicts for KEY=username, VALUE=messages, together PAIRS
         PAIRS = {'username' : ['messages']}
 
-        print(PAIRS)
+        for id in message (0, 15):
+
 
         return redirect("/")
 
