@@ -37,7 +37,7 @@ def messages():
 
     x=1
     while x <= 3:
-        names.append(db.execute("SELECT username FROM users;"))
+        names.append(db.execute("SELECT username FROM users WHERE id <= ?;", max_id_users))
         x +=1
 
     return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user, names=names)
