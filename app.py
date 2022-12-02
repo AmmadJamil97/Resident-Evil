@@ -59,11 +59,12 @@ def message():
 
 
         # 2nd idea
-        # create just a list first
+        # create just a list first for username
         names = []
 
-        for name in names:
-            
+        for names in range(max):
+            names.append(db.execute("SELECT username FROM users;"))
+
 
 
 
