@@ -22,6 +22,11 @@
 
 {% endfor %}
 
+{% for row in rows %}
+    {{ row["message"] }}
+{% endfor %}
+
+
 <form action="/message" method="post" class="login-form">
     <div> <!--div - input will create username and password box on top-->
         <input required class="namenpass-box" type="text" placeholder="Message" name="message" id="message">

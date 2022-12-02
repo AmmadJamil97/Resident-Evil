@@ -38,7 +38,7 @@ def messages():
 
     current_user = db.execute("SELECT username from users where id = ?", session["user_id"])[0]["username"]
 
-    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user)
+    return render_template("chatroom.html", messages = MESSAGES, usernames=usernames, current_user=current_user, rows=rows)
 
 @app.route("/message", methods =["POST", "GET"])
 def message():
