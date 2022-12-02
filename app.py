@@ -62,8 +62,14 @@ def message():
         # create just a list first for username
         names = []
 
-        for names in range(max):
+        while 
+        for x in range(max):
             names.append(db.execute("SELECT username FROM users;"))
+            x +=1
+
+        messages = []
+
+        for y in range
 
 
 
