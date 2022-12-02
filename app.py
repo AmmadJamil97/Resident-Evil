@@ -28,8 +28,10 @@ def messages():
     # last trial of copy from finance
     rows = db.execute("SELECT message FROM message WHERE user_id = ?;", session["user_id"])
 
+    x=0
     for row in rows:
-        row["message"] = db.execute("SELECT message FROM message")
+        row["message"] = db.execute("SELECT message FROM message")[x]["message"]
+        x+=1
 
 
     usernames = db.execute("SELECT username from users;")
