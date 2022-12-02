@@ -25,6 +25,9 @@ def messages():
     if session.get("user_id") is None:
             return redirect("/login")
 
+    # last trial of copy from finance
+    rows = db.execute("SELECT ;")
+
     usernames = db.execute("SELECT username from users;")
 
     MESSAGES = db.execute('SELECT * from message;')
