@@ -52,7 +52,7 @@ def message():
         min =db.execute("SELECT MIN(id) FROM message;")
         max = db.execute("SELECT MAX(id) FROM message;")
         for id in range (min, max):
-            if db.execute("SELECT ")
+            if (db.execute("SELECT username FROM users;")) = ()
             id += 1
 
 
